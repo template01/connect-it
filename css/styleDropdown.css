@@ -1,0 +1,201 @@
+.dropdownContainer {
+width: 120px;
+    float: left;
+    margin:0   auto;
+    /* padding: 0; */
+    padding-top: 0px !important;
+    padding-bottom: 0px;
+}
+
+.dropdownContainer > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0px 0;
+}
+
+
+.dropdownCheck a, .dropdown a {
+  text-decoration: none;
+  font-weight: 400;
+    font-size: 19px;
+    color: black;
+}
+
+.dropdownCheck [data-toggle="dropdown"], .dropdown [data-toggle="dropdown"] {
+display: block;
+position: relative;
+
+    margin:  0;
+    line-height: 64px;
+
+    outline: 0;
+text-decoration: none;
+white-space: nowrap;
+word-wrap: normal;
+vertical-align: middle;
+cursor: pointer;
+padding-left: 30px;
+}
+
+.dropdownCheck [data-toggle="dropdown"]{
+  cursor:default !important;
+      padding-left: 35px;
+}
+
+
+.dropdownCheck [data-toggle="dropdown"]:hover, .dropdown [data-toggle="dropdown"]:hover {
+  background: blue;
+  padding-right: 20px;
+  color: white;
+}
+
+.dropdownCheck input{
+  margin-left: -26px !important;
+  /*cursor: pointer;*/
+}
+
+.dropdownCheck label{
+      line-height: 12px;
+}
+
+
+.dropdownCheck span {
+    margin: 3px 8px -2px 8px !important;
+    border-color: black !important;
+        /*margin-right: 8px !important;*/
+}
+
+.dropdownCheck span:before{
+  color: black !important;
+}
+
+
+.openButton{
+  background: blue;
+  color: white !important;
+}
+
+.dropdown .icon-arrow {
+  position: absolute;
+  display: block;
+  color: black;
+  top: 0px;
+  left: 8px;
+  font-size: 14px;
+}
+
+.dropdown .icon-arrow.open {
+  color: white;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  transition: transform 0.6s;
+}
+
+.dropdown .icon-arrow.close {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  transition: transform 0.6s;
+}
+
+.dropdown .icon-arrow:before {
+  content: '\25BC';
+}
+
+.show{
+  border-bottom: 2px solid blue;
+}
+
+.dropdown .dropdown-menu {
+  background-color: white;
+  padding-top: 10px;
+    width: calc(100% - 10px);
+    max-height: 0;
+    overflow: hidden;
+    list-style: none;
+    padding-left: 10px;
+  padding-bottom:10px;
+  margin: 0;
+
+}
+
+.dropdown .dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown .dropdown-menu li a {
+  display: block;
+  padding: 10px 10px;
+}
+
+.dropdown .dropdown-menu li a:hover {
+  background: white;
+
+}
+
+.dropdownCheck [data-toggle="dropdown"]:hover i, .dropdown [data-toggle="dropdown"]:hover i {
+  color: white;
+}
+
+
+.dropdown .show, .dropdown .hide {
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+.dropdownCheck .show,.dropdown .show {
+  display: block;
+  max-height: 9999px;
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  transform: scaleY(1);
+  animation: showAnimation 0.5s ease-in-out;
+  -moz-animation: showAnimation 0.5s ease-in-out;
+  -webkit-animation: showAnimation 0.5s ease-in-out;
+  -webkit-transition: max-height 1s ease-in-out;
+  -moz-transition: max-height 1s ease-in-out;
+  -o-transition: max-height 1s ease-in-out;
+  transition: max-height 1s ease-in-out;
+}
+
+.dropdownCheck .hide, .dropdown .hide {
+   /*max-height: 9999px; */
+  max-height: 0;
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -o-transform: scaleY(0);
+  transform: scaleY(0);
+  animation: hideAnimation 0.4s ease-out;
+  -moz-animation: hideAnimation 0.4s ease-out;
+  -webkit-animation: hideAnimation 0.4s ease-out;
+  -webkit-transition: max-height 0.6s ease-out;
+  -moz-transition: max-height 0.6s ease-out;
+  -o-transition: max-height 0.6s ease-out;
+  transition: max-height 0.6s ease-out;
+}
+
+
+.toggleLegendWrapper *{
+  cursor: pointer;
+}
+
+.toggleLegend {
+  pointer-events: none;
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.2"
+   width="45.301159"
+   height="57.476299"
+   viewBox="0 0 45.301159 57.476299"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="theme4.svg">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Image cloud</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1152"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="12.419398"
+     inkscape:cx="-6.3710332"
+     inkscape:cy="30.55518"
+     inkscape:window-x="0"
+     inkscape:window-y="29"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showguides="false" />
+  <title
+     id="title4">Image cloud</title>
+  <desc
+     id="desc6">Vector image cloud</desc>
+  <path
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#333333;stroke-width:2.70000005;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate"
+     d="m 2.7788345,10.886952 c -0.64076,0 -1.147,0.57818 -1.147,1.310017 l 0,6.089253 42.0374895,0 0,-6.089253 c 0,-0.731837 -0.50622,-1.310017 -1.147,-1.310017 z m -1.147,15.427667 0,16.964705 c 0,0.731845 0.50624,1.310024 1.147,1.310024 l 39.7434895,0 c 0.64078,0 1.147,-0.578179 1.147,-1.310024 l 0,-16.964705 z"
+     id="rect4163-9-3"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ssccssscsssscc" />
+</svg>

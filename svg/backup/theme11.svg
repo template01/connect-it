@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.2"
+   width="45.301159"
+   height="57.476299"
+   viewBox="0 0 45.301159 57.476299"
+   id="svg2"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="theme11.svg">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Image cloud</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1152"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="8"
+     inkscape:cx="26.894953"
+     inkscape:cy="20.037769"
+     inkscape:window-x="0"
+     inkscape:window-y="29"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showguides="false"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       orientation="0,1"
+       position="27.929555,33.860832"
+       id="guide2992" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-3.2915296,25.907524"
+       id="guide3764" />
+  </sodipodi:namedview>
+  <title
+     id="title4">Image cloud</title>
+  <desc
+     id="desc6">Vector image cloud</desc>
+  <path
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:3.29999995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     d="m 126.75,36.101299 -11.75,-15.5"
+     id="path3761"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 15.653757,49.341157 C 15.510623,49.250107 14.12297,47.480161 12.570066,45.407944 L 9.7466178,41.640279 5.894107,38.752334 C 3.7752236,37.163965 2.0139626,35.792401 1.9801965,35.70442 c -0.033813,-0.08798 -0.061329,-0.311466 -0.061329,-0.496616 0,-0.308147 0.1334439,-0.471559 1.5763051,-1.930273 0.8669713,-0.876499 1.7017038,-1.645574 1.854969,-1.709051 0.2493167,-0.103278 0.5952214,-0.02915 3.2863686,0.704172 l 3.0077158,0.819594 3.81907,-3.818196 c 2.100485,-2.100009 3.819049,-3.839741 3.819014,-3.866076 -2.3e-5,-0.02635 -3.383772,-1.905205 -7.519436,-4.175272 C 7.62721,18.962638 4.1474206,17.003012 4.029997,16.877973 3.8811158,16.719427 3.8165101,16.534261 3.8165101,16.266064 c 0,-0.374462 0.055384,-0.440083 2.1046005,-2.496766 1.3206455,-1.325428 2.1959528,-2.132265 2.3498714,-2.166071 0.1534866,-0.0337 3.971683,0.836135 10.20115,2.323984 l 9.955847,2.37786 2.709428,-2.690054 c 1.490189,-1.479535 2.922918,-2.863049 3.183835,-3.074478 1.642374,-1.3308153 3.970231,-2.3779113 5.67471,-2.5525423 1.14639,-0.11745 2.402901,0.32402 2.851467,1.00185 0.872521,1.3184633 0.674187,3.3428753 -0.5703,5.8210873 -0.760314,1.514049 -1.390893,2.277317 -4.364768,5.283181 l -2.863131,2.893917 2.36328,10.294754 c 1.299805,5.662116 2.363552,10.40868 2.363885,10.547921 0,0.139244 -0.02724,0.325717 -0.06126,0.414387 -0.08314,0.216653 -4.144783,3.250628 -4.456387,3.328836 -0.147828,0.0371 -0.369407,0.0028 -0.555587,-0.08596 -0.274968,-0.13113 -0.780807,-1.005146 -4.513935,-7.799423 l -4.204258,-7.65174 -3.825706,3.824837 c -2.104146,2.103658 -3.825717,3.875852 -3.825717,3.938211 0,0.06235 0.341579,1.364655 0.759061,2.894 0.417483,1.529343 0.759062,2.927301 0.759062,3.106568 0,0.294003 -0.151085,0.478723 -1.541839,1.884994 -1.39283,1.408381 -1.910749,1.823276 -2.274131,1.821784 -0.06692,-2.86e-4 -0.238765,-0.075 -0.381886,-0.166045 z"
+     id="path3859"
+     inkscape:connector-curvature="0" />
+</svg>
