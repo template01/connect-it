@@ -66,7 +66,7 @@ function parseTheme(themeNumber){
 
 	// if (themeNumber.indexOf(13) > -1) {
 	// return 'Transportation'
-	// }		
+	// }
 
 }
 
@@ -87,8 +87,8 @@ $(document).on('click','.element-itemMarker, .node, .element-item', function(){
 	theme3 = $(this).attr('data-theme3')
 	website = $(this).attr('data-website')
 	name = '<h1>'+$(this).attr('data-name')+' (<a href="'+website+'" target="_blank">website</a>) </h1>'
-	
-	
+
+
 	if(typeof theme != 'undefined'){
 
 		if(typeof parseTheme(theme2) === 'undefined'){
@@ -138,16 +138,18 @@ $(document).on('click','.element-itemMarker, .node, .element-item', function(){
 
 
 
-	// popUpWrapperTop = 64 
+	// popUpWrapperTop = 64
 
 	// if($('.headerDesc').is(':visible')){
 	// 	$('.popUpWrapper').css({'top':popUpWrapperTop+$('.headerDesc').outerHeight()+'px','border-top':'2px solid blue'})
 	// }else{
 	// 	$('.popUpWrapper').css({'top':'','border-top':''})
-	// }	
+	// }
 
+	if(isNetwork){
+		popUpNetwork($(this).attr('data-acro'))
 
-	popUpNetwork($(this).attr('data-acro'))
+	}
 
 })
 
@@ -223,5 +225,3 @@ $(document).on("click", ".showConnections", function() {
 
 
 closePopupClick()
-
-

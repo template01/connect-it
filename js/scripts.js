@@ -120,7 +120,7 @@ function fullPage(){
         keyboardScrolling: false,
         anchors: ['introductionSlide', 'introductionSlide2', 'visualisation', 'download'],
         controlArrows:false,
-        animateAnchor: false,
+        // animateAnchor: false,
 
     afterRender: function () {
         //disabling scrolling up on page load if we are in the 1st section
@@ -242,16 +242,16 @@ function fullPage(){
           ifDescMenu()
 
           ifZoomPopUp()
-
-          if(isTriangle){
-
-            var intervalTriangle = window.setInterval(function () {
-              if (initMarkersReady == true){
-                initTriangle()
-                clearInterval(intervalTriangle);
-              }
-            }, 100);
-          }
+          //
+          // if(isTriangle){
+          //
+          //   var intervalTriangle = window.setInterval(function () {
+          //     if (initMarkersReady == true){
+          //       initTriangle()
+          //       clearInterval(intervalTriangle);
+          //     }
+          //   }, 100);
+          // }
 
           // if (slideAnchor == 3){
                           // setTimeout(function(){
@@ -259,13 +259,13 @@ function fullPage(){
               // }, 2300);
           // }
 
-          if (slideAnchor == 4){
+          if (slideAnchor == 3){
             // layoutDesc()
             initDescView()
             // alert('hey')
           }
 
-          if (slideAnchor == 5){
+          if (slideAnchor == 4){
           // console.log('graph')
           $('.graphWrap').show()
 
@@ -297,7 +297,6 @@ function fullPage(){
             var intervalMarker = window.setInterval(function () {
               if (initMarkersReady == true){
                 addMarkers()
-                spiderfy()
                 clearInterval(intervalMarker);
               }
             }, 300);
@@ -345,8 +344,6 @@ function fullPage(){
               var intervalMarker = window.setInterval(function () {
                 if (initMarkersReady == true){
                   addMarkers()
-                  spiderfy()
-                  // runMap()
                   clearInterval(intervalMarker);
                 }
               }, 300);

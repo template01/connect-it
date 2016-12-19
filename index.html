@@ -210,22 +210,15 @@
 <!--       <p>The <b> <a href="#visualisation">Geography</a> </b> view displays each of the 80 institutions and where in the world they are located. Some added options can highlight their size, <a href="#" class="highlightInfo tooltip-bottom" data-tooltip="The primary activity of a scheme, relatively to the way they pursue the climate change governance goal.">role</a> and <a href="#" class="highlightInfo tooltip-bottom" data-tooltip="The nature of government involvement.">type</a>.</p>  -->
     </div>
     <div class ="aboutHowSmall">
-    <div class="aboutIcon">
-        <a href="#visualisation/1" class=""role="button"><img src="./css/icons/triangleW.svg"></a>
-      </div>
-<!--       <p>The <b> <a href="#visualisation/1">Governance Triangle</a> </b> places the institutions in zones, determined by the identity of their constituent actors. Additionally, the horizontal lines divide the triangle into three “tiers”, defined by the nature of government involvement. </p>  -->
-      <p><b><a href="#visualisation/1">Governance Triangle</a> </b> situates institutions depending on their constituents</p>
-    </div>
-    <div class ="aboutHowSmall">
       <div class="aboutIcon">
-        <a id="linkIsoRow" href="#visualisation/2" class=""role="button"><img src="./css/icons/bubbleW.svg"></a>
+        <a id="linkIsoRow" href="#visualisation/1" class=""role="button"><img src="./css/icons/bubbleW.svg"></a>
       </div>
-      <p><b> <a href="#visualisation/2">Disc</a> </b> provides a flat view with multiple options for analysis</p>
+      <p><b> <a href="#visualisation/1">Disc</a> </b> provides a flat view with multiple options for analysis</p>
 <!--       <p>The <b> <a href="#visualisation/2">Disc</a> </b> view allows for a flat view of the institutions, so they can sorted in a number of ways: arranged by date, number of members or <a href="#" class="highlightInfo tooltip-bottom" data-tooltip="The primary activity of a scheme, relatively to the way they pursue the climate change governance goal.">role</a>. Highlighting options sort the information visually.  </p> -->
     </div>
     <div class ="aboutHowSmall">
       <div class="aboutIcon">
-        <a id="linkIsoList" class=" viewIsoToggle" href="#visualisation/3" role="button"><img src="./css/icons/listW.svg"></a>
+        <a id="linkIsoList" class=" viewIsoToggle" href="#visualisation/2" role="button"><img src="./css/icons/listW.svg"></a>
       </div>
       <!-- <p>Similar to the disc view, the information is displayed as a <b> <a href="#visualisation/2">List</a> </b> or table.</p>  -->
       <p><b> <a href="#visualisation/2">List</a> </b>  is an alternative to ‘disc’</p>
@@ -262,10 +255,10 @@
       <div id="map"></div>
     </div>
 
-    <div class="slide showCheckMenu showCheckMenuRole  showCheckMenuType showCheckMenuTheme" id="triangleView">
+    <!-- <div class="slide showCheckMenu showCheckMenuRole  showCheckMenuType showCheckMenuTheme" id="triangleView">
       <div class="triangle">
       </div>
-    </div>
+    </div> -->
 
     <div class="slide showCheckMenu showCheckMenuName showCheckMenuDate showCheckMenuRole showCheckMenuMembers showCheckMenuType sortMenu showCheckMenuTheme" id="discView">
       <div id="gridWrapper">
@@ -356,11 +349,11 @@
   <div class="headerChangeView">
     <p>Visualizations:</p>
     <a id="viewMap" href="#visualisation" class="icon"role="button"><img src="./css/icons/map.svg"></a>
-    <a id="viewTri" href="#visualisation/1" class="icon"role="button"><img src="./css/icons/triangle.svg"></a>
-    <a id="viewIsoRow" href="#visualisation/2" class="viewIsoToggle icon" role="button"><img src="./css/icons/bubble.svg"></a>
-    <a id="viewIsoList" href="#visualisation/3" class="viewIsoToggle icon" role="button"><img src="./css/icons/list.svg"></a>
-    <a id="viewDesc" href="#visualisation/4" class="icon" role="button"><img src="./css/icons/desc.svg"></a>
-    <a id="viewNetwork" href="#visualisation/5" class="icon" role="button"><img src="./css/icons/network.svg"></a>
+    <!-- <a id="viewTri" href="#visualisation/1" class="icon"role="button"><img src="./css/icons/triangle.svg"></a> -->
+    <a id="viewIsoRow" href="#visualisation/1" class="viewIsoToggle icon" role="button"><img src="./css/icons/bubble.svg"></a>
+    <a id="viewIsoList" href="#visualisation/2" class="viewIsoToggle icon" role="button"><img src="./css/icons/list.svg"></a>
+    <a id="viewDesc" href="#visualisation/3" class="icon" role="button"><img src="./css/icons/desc.svg"></a>
+    <a id="viewNetwork" href="#visualisation/4" class="icon" role="button"><img src="./css/icons/network.svg"></a>
 
 <!-- <br><p class="countBubbles"> </p> -->
 
@@ -517,7 +510,8 @@
 <script  class="removeMobile" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
 <script  class="removeMobile" src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script  class="removeMobile" src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
- <script  class="removeMobile" src="./jsLib/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 <script  class="removeMobile" src="./jsLib/mashor.js"></script>
 <script  class="removeMobile" src="./jsLib/papaparse.js"></script>
 <script  class="removeMobile" src="./jsLib/vivagraph.js"></script>
