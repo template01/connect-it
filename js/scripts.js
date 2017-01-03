@@ -337,6 +337,9 @@ function fullPage() {
                 $('.graphWrap').fadeOut(300)
             }
 
+
+            mapPopup.closePopup()
+
             sidemenu.sidemenuSlideOut()
 
 
@@ -397,7 +400,9 @@ function checkChecks() {
     if ($('.showTheme').is(":checked")) {
         addD3themes()
         positionD3themes()
-        $('.element-itemMarker').addClass('themeElement')
+        // $('.element-itemMarker').addClass('themeElement')
+        $('.mapPopupSingleInitiative').addClass('themeElement')
+
     }
     if ($('.showType').is(":checked")) {
         typeElementAll()

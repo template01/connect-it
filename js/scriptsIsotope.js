@@ -428,6 +428,8 @@ function toggleResizeElementVert() {
 
 function roleElement() {
     $('.element-item').addClass('roleElement')
+
+    $('.mapPopupSingleInitiative').addClass('roleElement')
         // $('.element-item').css({'border':'none'})
     $('.element-itemMarker').addClass('roleElement')
     $('.grid').isotope()
@@ -582,13 +584,13 @@ function toggleThemeElement() {
         // $(this).toggleClass('sortHighlight')
         if ($('.element-item').hasClass('themeElement')) {
             $('.element-item').removeClass('themeElement')
-            $('.element-itemMarker').removeClass('themeElement')
+            $('.mapPopupSingleInitiative').removeClass('themeElement')
             removePositionD3themes()
             removeD3themes()
         } else {
             // themeElement()
             $('.element-item').addClass('themeElement')
-            $('.element-itemMarker').addClass('themeElement')
+            $('.mapPopupSingleInitiative').addClass('themeElement')
             addD3themes()
             positionD3themes()
                 // d3.selectAll(".node").classed("themeElement", true)
@@ -603,6 +605,7 @@ function toggleRoleElement() {
 
         if ($('.element-item').hasClass('roleElement')) {
             $('.element-item').removeClass('roleElement')
+            $('.mapPopupSingleInitiative').removeClass('roleElement')
             $('.element-itemMarker').removeClass('roleElement')
             removeTriangleGradients()
         } else {
@@ -624,15 +627,14 @@ function toggleRoleElement() {
 }
 
 function typeElement() {
-    $('.element-item').each(function() {
-        $(this).addClass('typeElement')
-    })
+    $('.element-item, .mapPopupSingleInitiative').addClass('typeElement')
+
 }
 
 function toggleTypeElement() {
     $(document).on('change', '.showType', function() {
-        if ($('.element-item').hasClass('typeElement')) {
-            $('.element-item').removeClass('typeElement')
+        if ($('.element-item, .mapPopupSingleInitiative').hasClass('typeElement')) {
+            $('.element-item, .mapPopupSingleInitiative').removeClass('typeElement')
             typeElementAllOrg()
         } else {
             typeElement()
