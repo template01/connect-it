@@ -72,7 +72,7 @@ function parseTheme(themeNumber){
 
 
 
-$(document).on('click','.element-itemMarker, .node, .element-item', function(){
+$(document).on('click','.element-itemMarker, .node, .element-item, .mapPopupSingleInitiative', function(){
 
 	// alert('element')
 	// alert($(this).attr('data-desc'))
@@ -129,7 +129,7 @@ $(document).on('click','.element-itemMarker, .node, .element-item', function(){
 
 	$('.popUpWrapper').remove()
 
-	$('body').append('<div class="popUpWrapper"><div class="close"><img src="./css/icons/close.svg"></div>'+name+'<p class="smalltext">Acronym: '+acro+' Date: '+date+' Members: '+members+' Type: '+type+' Theme: <b>'+parsedTheme+parsedTheme2+parsedTheme3+'</b></p>'+desc+'</div>')
+	$('#sidemenuItemInfo').append('<div class="popUpWrapper"><div class="close"><img src="./css/icons/close.svg"></div>'+name+'<p class="smalltext">Acronym: '+acro+' Date: '+date+' Members: '+members+' Type: '+type+' Theme: <b>'+parsedTheme+parsedTheme2+parsedTheme3+'</b></p>'+desc+'</div>')
 	if($('.graphWrap').is(':visible')){
 		$('.popUpWrapper').append('<div class="membersWrapper"><p class="smalltext">Member information:</p></div>')
 		$('.membersWrapper').append('<p class="smalltext multipleMember"><b>Members with several connections:</b><br></p>')

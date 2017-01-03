@@ -12,7 +12,9 @@
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,500,700,200,100,600,800,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./css/style.css" media="screen">
-    <link rel="stylesheet" href="./css/styleDropdown.css" media="screen">
+    <link rel="stylesheet" href="./css/style_sidemenu.css" media="screen">
+    <link rel="stylesheet" href="./css/style_mappopup.css" media="screen">
+    <!-- <link rel="stylesheet" href="./css/styleDropdown.css" media="screen"> -->
     <link rel="stylesheet" href="./css/animate.css" media="screen">
     <link rel="stylesheet" href="./css/font-awesome.min.css" media="screen">
     <link rel="stylesheet" href="./css/jquery.fullPage.css" media="screen">
@@ -169,7 +171,7 @@
   </div>
 
 
-<div class="removeMobile">
+<div id="app" class="removeMobile">
 <div id="fullpage">
     <div id="" class="section introOne">
 
@@ -347,7 +349,6 @@
 <!--   <div class="headerSubTitle">  <p> Mapping the Institutional Architecture of Global Climate Change Governance</p>  </div> -->
 
   <div class="headerChangeView">
-    <p>Visualizations:</p>
     <a id="viewMap" href="#visualisation" class="icon"role="button"><img src="./css/icons/map.svg"></a>
     <!-- <a id="viewTri" href="#visualisation/1" class="icon"role="button"><img src="./css/icons/triangle.svg"></a> -->
     <a id="viewIsoRow" href="#visualisation/1" class="viewIsoToggle icon" role="button"><img src="./css/icons/bubble.svg"></a>
@@ -359,68 +360,6 @@
 
   </div>
 
-  <div class="headerChangeCheck">
-    <p>Tools:</p>
-  </div>
-<!-- DROP DOWN START -->
-
-<div class="dropdownContainer" id="viewIsoMenu">
-<ul>
-    <li class="dropdown">
-      <a href="#" data-toggle="dropdown"><p>Sort</p><i class="icon-arrow"></i></a>
-      <ul  class="dropdown-menu button-group sort-by-button-group hide">
-<!--         <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li> -->
-        <li><input data-sort-by="acro" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off" /><label class=""><span><span></span></span>acro</label></li>
-        <li><input data-sort-by="name" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off" /><label class=""><span><span></span></span>name</label></li>
-        <li><input data-sort-by="date" type="checkbox" value="showDate" class="sort-by-button-group" autocomplete="off" /><label class=""><span><span></span></span>date</label></li>
-        <li><input data-sort-by="members" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off" /><label class=""><span><span></span></span>members</label></li>
-        <li><input data-sort-by="role" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off" /><label class=""><span><span></span></span>role</label></li>
-        <li><input data-sort-by="type" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off" /><label class=""><span><span></span></span>type</label></li>
-        <li><input data-sort-by="theme" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off" /><label class=""><span><span></span></span>theme</label></li>
-
-<!--       <li><button class="button" data-sort-by="acro">button</button></li>
-      <li><button class="button" data-sort-by="name">name</button></li>
-      <li><button class="button" data-sort-by="date">date</button></li>
-      <li><button class="button" data-sort-by="members">members</button></li>
-      <li><button class="button" data-sort-by="role">role</button> </li>
-      <li><button class="button" data-sort-by="type">type</button> </li>
-      <li><button class="button" data-sort-by="theme">theme</button> </li> -->
-
-
-      </ul>
-    </li>
-</ul>
-</div>
-
-<div class="dropdownContainer" id="highlightIsoMenu">
-<ul>
-    <li class="dropdown">
-      <a href="#" data-toggle="dropdown"><p>Show</p><i class="icon-arrow"></i></a>
-      <ul class="dropdown-menu hide">
-         <li><input type="checkbox" value="showName" class="checkSortShow showName" autocomplete="off" /><label class="checkSortShow showName"><span><span></span></span>name</label></li>
-         <li><input type="checkbox" value="showDate" class="checkSortShow showDate" autocomplete="off"/><label  class="checkSortShow showDate"><span><span></span></span>date</label></li>
-         <li><input type="checkbox" value="showMembers" class="checkSortShow showMembers" autocomplete="off"/><label class="checkSortShow showMembers"><span><span></span></span>members</label></li>
-         <li><input type="checkbox" value="showType" class="checkSortShow showType" autocomplete="off"/><label class="checkSortShow showType"><span><span></span></span>type</label></li>
-         <li><input type="checkbox" value="showRole" class="checkSortShow showRole" autocomplete="off"/><label class="checkSortShow showRole"><span><span></span></span>role</label></li>
-         <li><input type="checkbox" value="showTheme" class="checkSortShow showTheme" autocomplete="off"/><label class="checkSortShow showTheme"><span><span></span></span>theme</label></li>
-      </ul>
-    </li>
-</ul>
-</div>
-
-<div class="dropdownContainer" id="">
-<ul>
-    <li class="dropdownCheck toggleLegendWrapper">
-      <a href="javascript:void(0)" data-toggle="dropdown"><p><input type="checkbox" value="toggleLegend" class="toggleLegend" autocomplete="off"/><label class=""><span><span></span></span></label>Legend</p></a>
-    </li>
-</ul>
-</div>
-
-
-<!-- DROP DOWN END -->
 
     <div class ='menuDescWrapper' id="viewDescMenu">
       <div id="frequentWords"><p>Filter by frequents words:&nbsp;</p></div>
@@ -449,7 +388,7 @@
 <!-- fixed footer popUp -->
 
 <div class="footer zoomPopUp">
-  <p>Explore by scolling and panning!</p><div class="close"><img src="./css/icons/close.svg"></div>
+  <p>Just zoom and click around!</p><div class="close"><img src="./css/icons/close.svg"></div>
 </div>
 
 
@@ -512,9 +451,10 @@
 <script  class="removeMobile" src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+<script  class="removeMobile" src="./jsLib/packery-mode.pkgd.min.js"></script>
 <script  class="removeMobile" src="./jsLib/mashor.js"></script>
 <script  class="removeMobile" src="./jsLib/papaparse.js"></script>
-<script  class="removeMobile" src="./jsLib/vivagraph.js"></script>
+<!-- <script  class="removeMobile" src="./jsLib/vivagraph.js"></script> -->
 <script  class="removeMobile" src="./jsLib/jquery.highlight.js"></script>
 <script  class="removeMobile" src="./jsLib/jquery.line.js"></script>
 <script  class="removeMobile" src="./jsLib/jquery.fullPage.min.js"></script>
@@ -533,8 +473,10 @@
 <script  class="removeMobile" src="./js/scriptsDesc.js"></script>
 <script  class="removeMobile" src="./js/scriptsIntro.js"></script>
 <script  class="removeMobile" src="./js/scriptsMap.js"></script>
+<script  class="removeMobile" src="./js/scriptsMapPopup.js"></script>
 <script  class="removeMobile" src="./js/scriptsDropdown.js"></script>
 <script class="removeMobile"  src="./js/scriptsPopup.js"></script>
+<script class="removeMobile"  src="./js/scriptsSidemenu.js"></script>
 
 
 <script  class="removeMobile" src="./js/scriptsParseMemberList.js"></script>

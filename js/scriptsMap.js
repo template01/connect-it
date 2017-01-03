@@ -13,7 +13,12 @@ var themeVarMap = '<div class="themeWrapper"><img class="themeImg1" src="./svg/t
 
 var countriesPolygons = {"countries":[]}
 
+
+var markersAdded = false
+
 function addMarkers() {
+
+    if(markersAdded==false){
 
     if (markerStart == false) {
 
@@ -57,7 +62,14 @@ function addMarkers() {
             // if (countriesPolygons.indexOf(dataList[iaddMarkersLoop].hq) < 0) {
 						search=JSON.search(countriesPolygons, '//*[ hq="'+dataList[iaddMarkersLoop].hq+'"]')
 						if(search	.length === 0){
-                countriesPolygons.countries.push({"hq":dataList[iaddMarkersLoop].hq,"color":1,"per_country":[dataList[iaddMarkersLoop]]})
+
+              countryName = 'temp'
+              if(typeof countryOverlay.features[dataList[iaddMarkersLoop].hq] !== "undefined")
+              {
+                countryName = countryOverlay.features[dataList[iaddMarkersLoop].hq].properties.name_long
+              }
+
+                countriesPolygons.countries.push({"countryInfo":countryName,"hq":dataList[iaddMarkersLoop].hq,"color":1,"per_country":[dataList[iaddMarkersLoop]]})
 							}else{
                 search[0].color = search[0].color + 1
 								search[0].per_country.push(dataList[iaddMarkersLoop])
@@ -111,9 +123,14 @@ function addMarkers() {
 						"weight": 0,
 						"fillOpacity": maxOpacity
 					}
-			}).addTo(map);
+			}).addTo(map).bindPopup(mapPopup.renderContent(countriesPolygons.countries[i].per_country,countriesPolygons.countries[i].countryInfo));
 
 		}
+
+    markersAdded = true
+
+  }
+
 
 }
 

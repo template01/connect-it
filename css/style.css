@@ -211,14 +211,15 @@ body {
   height: 0px;
   overflow: hidden;
   /*height: 60px;*/
-  width: calc(50% - 40px);
-  border-top: 0px solid blue;
+  width: 358px;
+  border-top: 0px solid red;
   z-index: 1111;
   background-color: white;
   bottom: 0;
   padding: 0px;
   padding-left: 20px;
   padding-right: 20px;
+  box-sizing: border-box;
   padding-bottom: 0px;
   transition-property: height, max-height;
   transition-duration: .5s;
@@ -250,7 +251,7 @@ body {
   max-height: 0px;
   /*height: 0px;*/
   overflow: hidden;
-  /*height: 60px;*/
+  height: 64px;
   width: calc(100% - 40px);
   z-index: 1111;
   top: 0;
@@ -398,9 +399,8 @@ input[type=checkbox]:not(old):checked + label > span:before{
 }
 
 .headerTitle {
-  min-width: 100px;
+  min-width: 340px;
   float: left;
-  padding-right: 25px;
 }
 
 .headerTitle p a {
@@ -414,6 +414,7 @@ input[type=checkbox]:not(old):checked + label > span:before{
 .headerChangeView{
   float: left;
   padding-right: 25px;
+  padding-left: 10px;
 
 }
 
@@ -1337,7 +1338,7 @@ pre {
 
 .zoomPopUpHeight {
   height: 63px;
-  border-top: 2px solid blue;
+  border-top: 2px solid lightgrey;
   max-height: 65px;
   transition-property: height, max-height;
   transition-duration: .5s;
@@ -2113,7 +2114,7 @@ overflow: hidden;
 }
 
 .popUpWrapper{
-  position: fixed;
+  /*position: fixed;
   top: 64px;
   background-color: white;
   width: calc(25% - 40px);
@@ -2125,7 +2126,7 @@ overflow: hidden;
   z-index: 9999999999999999;
       overflow-y: auto;
     height: auto;
-    max-height: calc(100vh - 106px);
+    max-height: calc(100vh - 106px);*/
 }
 
 /*#container:hover > #cube { background-color: yellow; }*/
