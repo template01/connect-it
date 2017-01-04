@@ -40,6 +40,7 @@ var sidemenu = (function() {
 
             this.sidemenuLegend()
             this.sidemenuFiltersTemplate()
+            this.sidemenuCollapsible()
         }
     }
 
@@ -58,9 +59,9 @@ var sidemenu = (function() {
         $('#sidemenu').children().css({
             'opacity': 0
         })
-        window.setTimeout(function(){
-          $('#sidemenu').children('#sidemenuDescription').empty()
-        },250)
+        window.setTimeout(function() {
+            $('#sidemenu').children('#sidemenuDescription').find('*').not('.sidemenuCollapse').not('.sidemenuCollapse *').remove();
+        }, 250)
     }
 
     var sidemenuRenderContent = function() {
@@ -77,11 +78,11 @@ var sidemenu = (function() {
 
     var sidemenuGetDesc = function(currentslideParameter) {
 
-        if($('#sidemenuDescription').html().length == 0){
-          $('#sidemenuDescription').append(
-              "<p>" + visualisationDescriptions[currentslideParameter].name + "</p>" +
-              "<p>" + visualisationDescriptions[currentslideParameter].desc + "</p>"
-          )
+        if ($('#sidemenuDescription').children(':not(.sidemenuCollapse)').length == 0) {
+            $('#sidemenuDescription').append(
+                "<p class='sidemenuItemTitle'>" + visualisationDescriptions[currentslideParameter].name + "</p>" +
+                "<p>" + visualisationDescriptions[currentslideParameter].desc + "</p>"
+            )
         }
 
 
@@ -147,7 +148,7 @@ var sidemenu = (function() {
     }
 
     var sidemenuFiltersTemplate = function() {
-        filterShow = `<div><p>Show:</p>
+        filterShow = `<div class="filterOptionWrapper"><p>Show:</p>
         <li><input type="checkbox" value="showName" class="checkSortShow showName" autocomplete="off" /><label class="checkSortShow showName"><span><span></span></span>name</label></li>
         <li><input type="checkbox" value="showDate" class="checkSortShow showDate" autocomplete="off"/><label  class="checkSortShow showDate"><span><span></span></span>date</label></li>
         <li><input type="checkbox" value="showMembers" class="checkSortShow showMembers" autocomplete="off"/><label class="checkSortShow showMembers"><span><span></span></span>members</label></li>
@@ -156,7 +157,7 @@ var sidemenu = (function() {
         <li><input type="checkbox" value="showTheme" class="checkSortShow showTheme" autocomplete="off"/><label class="checkSortShow showTheme"><span><span></span></span>theme</label></li>
         </div>`
 
-        filterSort = `<div id="sidemenuFiltersSort"><p>Sort:</p>
+        filterSort = `<div class="filterOptionWrapper" id="sidemenuFiltersSort"><p>Sort:</p>
         <li><input data-sort-by="acro" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>acro</label></li>
         <li><input data-sort-by="name" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>name</label></li>
         <li><input data-sort-by="date" type="checkbox" value="showDate" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>date</label></li>
@@ -166,14 +167,14 @@ var sidemenu = (function() {
         <li><input data-sort-by="theme" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>theme</label></li>
         </div>`
 
-        $('#sidemenuFilters').append(filterShow).append(filterSort)
+        $('#sidemenuFilters').append("<p class='sidemenuItemTitle'>Tools</p>"+"<div class='filterOptionWrapperOuter'>"+filterShow+filterSort+"</div>")
 
 
     }
 
     var sidemenuLegend = function() {
         legend =
-            `<p>Legend</p>
+            `<p class='sidemenuItemTitle'>Legend</p>
             <div class="sidemenuLegendInner ">
             <div class="roleLegendInner ">
           <p><b>Role (color):</b></p>
@@ -209,6 +210,20 @@ var sidemenu = (function() {
 
     }
 
+    var sidemenuCollapsible = function(){
+      $('.sidemenuItem').not("#sidemenuItemInfo").prepend('<div class="sidemenuCollapse"><img class="sidemenuCollapseIcon" src="./css/icons/sideClose.svg"/></div>')
+      $(document).on('click', '.sidemenuCollapse', function() {
+        // alert('hey!')
+        $(this).parents('.sidemenuItem').toggleClass('sidemenuItemCollapsed')
+        if($(this).parents('.sidemenuItem').hasClass('sidemenuItemCollapsed')){
+          $(this).find('.sidemenuCollapseIcon').attr('src','./css/icons/sideOpen.svg')
+        }else{
+          $(this).find('.sidemenuCollapseIcon').attr('src','./css/icons/sideClose.svg')
+        }
+
+      })
+    }
+
     return {
         test: test,
         sidemenuTemplate: sidemenuTemplate,
@@ -219,6 +234,7 @@ var sidemenu = (function() {
         sidemenuLegend: sidemenuLegend,
         sidemenuGetFilters: sidemenuGetFilters,
         sidemenuRenderContent: sidemenuRenderContent,
+        sidemenuCollapsible:sidemenuCollapsible,
         sidemenuInit: sidemenuInit
     };
 })();
