@@ -235,7 +235,7 @@ function resizeElementD3() {
             size = d3.select(this).attr('data-members')
                 // d3.selectAll(".node").attr('class','node resiz  ed')
             if (size < 125) {
-                d3.select(this).selectAll('rect').attr("x", -36 - ((size / 1) / 2)).attr("y", -36 - ((size / 1) / 2)).attr("width", (size / 1) + 72).attr("height", (size / 1) + 72)
+                d3.select(this).selectAll('rect').attr("rx", (size / 1) + 36).attr("ry", (size / 1) + 36).attr("x", -36 - ((size / 1) / 2)).attr("y", -36 - ((size / 1) / 2)).attr("width", (size / 1) + 72).attr("height", (size / 1) + 72)
             } else {
                 d3.select(this).selectAll('rect').attr("rx", 250).attr("ry", 250).attr("x", -250 / 2).attr("y", -250 / 2).attr("width", 250).attr("height", 250)
             }

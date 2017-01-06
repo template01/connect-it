@@ -5,6 +5,8 @@ var initMarkersReady
 var isShowZoomPopUp;
 
 
+
+
 function ifZoomPopUp() {
 
     if (isShowZoomPopUp) {
@@ -25,11 +27,27 @@ function clickZoomPopUp() {
 clickZoomPopUp()
 
 
+function handleAboutGoto() {
+
+
+    $(document).on('click', '.aboutGoTo', function() {
+
+        // console.log($('.'+$(this).attr('data-goto')).position().top)
+
+        $('.aboutHow').animate({
+            scrollTop: $('.' + $(this).attr('data-goto')).position().top - 10 + 'px'
+        }, 'fast');
+
+    })
+}
+handleAboutGoto()
+
+
 function fullPage() {
     $('#fullpage').fullpage({
         fitToSection: false,
         keyboardScrolling: false,
-        anchors: ['introductionSlide', 'visualisation', 'download'],
+        anchors: ['introductionSlide', 'visualisation', 'about'],
         controlArrows: false,
         // animateAnchor: false,
 
@@ -58,7 +76,11 @@ function fullPage() {
                 setTimeout(function() {
                     introNavigation()
                 }, 2000);
+                $('.graphWrap').fadeOut(300)
+
             }
+
+
 
 
             if ($('.fp-section.active').index('.fp-section') != 1) {
@@ -82,6 +104,8 @@ function fullPage() {
                 }, 500);
 
                 $.fn.fullpage.setAllowScrolling(false, 'down');
+                $.fn.fullpage.setAllowScrolling(false, 'up');
+
 
 
                 console.log($('.fp-slide.active.sortMenu').length)
@@ -103,8 +127,12 @@ function fullPage() {
 
             }
 
+
             if ($('.fp-section.active').index('.fp-section') == 2) {
-                $.fn.fullpage.setAllowScrolling(true, 'up');
+                $.fn.fullpage.setAllowScrolling(false, 'up');
+                $('.graphWrap').fadeOut(300)
+
+
             }
 
         },
@@ -150,6 +178,12 @@ function fullPage() {
 
 
             }
+
+            if (slideAnchor == 5) {
+                articleView.init()
+            }
+
+
 
             // THIS IS THE WAY TO DETECT A 'DIRECT GO TO SLIDE FROM URL'
             else if ($('#listView.fp-slide.active').length > 0) {

@@ -1,0 +1,105 @@
+#articleView {}
+
+.articleItem {
+    margin: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: calc(100% - 40px);
+    clear: both;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 20px;
+}
+
+.articleItem:not(:first-of-type){
+  /*margin-top: 50px;*/
+}
+
+.articleItem:last-of-type{
+  /*margin-top: 50px;*/
+  border-bottom: 0px solid lightgrey;
+
+}
+.articleItem h1, h2, h3 {
+    font-weight: 400;
+    color: #505050;
+
+}
+
+.articleItem h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    margin-left: 380px;
+    color: blue;
+
+
+}
+
+.articleItem h2 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 0px;
+    font-size: 20px;
+
+
+}
+
+.articleItem h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.articleItem p {
+    line-height: 1.5;
+    font-family: 'Libre Baskerville';
+    font-size: 15px;
+    color: #2F2F2F;
+}
+
+.articleItem a{
+  margin-top: 20px;
+  clear: both;
+  display: inline-block;
+  color: blue;
+  cursor: pointer;
+}
+
+
+.articleItem a:hover:after{
+  content:'Sorry! This is just a fake button!';
+  background:blue;
+  margin-left: 5px;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 20px;
+}
+
+
+.articleItemInitiatives p{
+  font-family: 'work sans';
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 0;
+  color: #505050;
+
+
+}
+
+.articleItemDesc{
+  margin-left: 20px;
+  width: calc(100% - 380px);
+  float: right;
+
+}
+
+.articleItemInitiatives{
+  width: 360px;
+  float: left;
+}
+
+.articleItemInitiatives .themeElement{
+  position: relative;
+  border-radius: 8px;
+}

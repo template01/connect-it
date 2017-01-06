@@ -3,6 +3,7 @@ function introNavigation() {
 
     // setTimeout(function() {
     // }, 5000);
+    $('.section').css({'opacity':'1'})
 
     $('.splashContent').fadeIn(300)
 
@@ -20,7 +21,7 @@ function introNavigation() {
                     // $('.splashContent').addClass('animated').addClass('slideOutUpHelper').addClass('slideOutUp').fadeOut(200)
                     $('.splashContent').fadeOut(300)
                     setTimeout(function() {
-                        $('.aboutWrap').fadeIn(300)
+                        $('.aboutWrap').fadeIn(500)
 
                         setTimeout(function() {
                             $('.aboutSmall.animate').addClass('aboutSmallMoveUp')

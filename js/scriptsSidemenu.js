@@ -20,6 +20,10 @@ var visualisationDescriptions = [{
     name: "Network view",
     desc: "The 'network view' links institutions by shared members",
     path: "./css/icons/network.svg"
+}, {
+    name: "Article view",
+    desc: "The 'article view' provides casestudies involving various members. WARNING: Still complete mockup-material.",
+    path: "./css/icons/network.svg"
 }, ]
 
 var sidemenu = (function() {
@@ -115,29 +119,62 @@ var sidemenu = (function() {
             }
         }
 
+        toggleFilters = function(toggle) {
+            if (toggle === "show") {
+                $('#sidemenuFilters').show()
+            }
+            if (toggle === "hide") {
+                $('#sidemenuFilters').hide()
+            }
+        }
+
+        toggleLegend = function(toggle) {
+            if (toggle === "show") {
+                $('#sidemenuLegend').show()
+            }
+            if (toggle === "hide") {
+                $('#sidemenuLegend').hide()
+            }
+        }
 
         switch (currentslideParameter) {
             case 0:
+                toggleFilters('show')
+                toggleLegend('show')
                 filterShow([])
                 filterSort('hide')
                 break;
 
             case 1:
+                toggleFilters('show')
+                toggleLegend('show')
                 filterSort('show')
                 filterShow(['showName', 'showDate', 'showMembers', 'showType', 'showRole', 'showTheme'])
                 break;
 
             case 2:
+                toggleFilters('show')
+                toggleLegend('show')
                 filterSort('show')
                 filterShow(['showMembers', 'showType', 'showRole'])
                 break;
 
             case 3:
+                toggleFilters('show')
+                toggleLegend('show')
                 filterSort('show')
                 filterShow([])
                 break;
 
             case 4:
+                toggleFilters('show')
+                toggleLegend('show')
+                filterSort('hide')
+                filterShow(['showMembers', 'showType', 'showRole', 'showTheme'])
+                break;
+            case 5:
+                toggleFilters('show')
+                toggleLegend('show')
                 filterSort('hide')
                 filterShow(['showMembers', 'showType', 'showRole', 'showTheme'])
                 break;
@@ -167,7 +204,7 @@ var sidemenu = (function() {
         <li><input data-sort-by="theme" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>theme</label></li>
         </div>`
 
-        $('#sidemenuFilters').append("<p class='sidemenuItemTitle'>Tools</p>"+"<div class='filterOptionWrapperOuter'>"+filterShow+filterSort+"</div>")
+        $('#sidemenuFilters').append("<p class='sidemenuItemTitle'>Tools</p>" + "<div class='filterOptionWrapperOuter'>" + filterShow + filterSort + "</div>")
 
 
     }
@@ -210,19 +247,19 @@ var sidemenu = (function() {
 
     }
 
-    var sidemenuCollapsible = function(){
-      $('.sidemenuItem').not("#sidemenuItemInfo, #sidemenuLegend").prepend('<div class="sidemenuCollapse"><img class="sidemenuCollapseIcon" src="./css/icons/sideClose.svg"/></div>')
-      $('#sidemenuLegend').prepend('<div class="sidemenuCollapse"><img class="sidemenuCollapseIcon" src="./css/icons/sideOpen.svg"/></div>')
-      $(document).on('click', '.sidemenuCollapse', function() {
-        // alert('hey!')
-        $(this).parents('.sidemenuItem').toggleClass('sidemenuItemCollapsed')
-        if($(this).parents('.sidemenuItem').hasClass('sidemenuItemCollapsed')){
-          $(this).find('.sidemenuCollapseIcon').attr('src','./css/icons/sideOpen.svg')
-        }else{
-          $(this).find('.sidemenuCollapseIcon').attr('src','./css/icons/sideClose.svg')
-        }
+    var sidemenuCollapsible = function() {
+        $('.sidemenuItem').not("#sidemenuItemInfo, #sidemenuLegend").prepend('<div class="sidemenuCollapse"><img class="sidemenuCollapseIcon" src="./css/icons/sideClose.svg"/></div>')
+        $('#sidemenuLegend').prepend('<div class="sidemenuCollapse"><img class="sidemenuCollapseIcon" src="./css/icons/sideOpen.svg"/></div>')
+        $(document).on('click', '.sidemenuCollapse', function() {
+            // alert('hey!')
+            $(this).parents('.sidemenuItem').toggleClass('sidemenuItemCollapsed')
+            if ($(this).parents('.sidemenuItem').hasClass('sidemenuItemCollapsed')) {
+                $(this).find('.sidemenuCollapseIcon').attr('src', './css/icons/sideOpen.svg')
+            } else {
+                $(this).find('.sidemenuCollapseIcon').attr('src', './css/icons/sideClose.svg')
+            }
 
-      })
+        })
     }
 
     return {
@@ -235,7 +272,7 @@ var sidemenu = (function() {
         sidemenuLegend: sidemenuLegend,
         sidemenuGetFilters: sidemenuGetFilters,
         sidemenuRenderContent: sidemenuRenderContent,
-        sidemenuCollapsible:sidemenuCollapsible,
+        sidemenuCollapsible: sidemenuCollapsible,
         sidemenuInit: sidemenuInit
     };
 })();

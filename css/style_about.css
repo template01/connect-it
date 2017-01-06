@@ -14,8 +14,19 @@
   font-family: 'Work Sans', sans-serif;
   font-size: 41px;
   line-height: 1.2;
+
+
+  height: 100vh;
+  overflow-y: scroll;
 }
 
+.faq .navArrowUp{
+  padding: 20px !important;
+}
+
+.aboutHow a{
+  border-bottom: 3px solid blue;
+}
 
 .aboutHow p:first-of-type {
   /*width: 50%;

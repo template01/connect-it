@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/style_mappopup.css" media="screen">
     <link rel="stylesheet" href="./css/style_intro.css" media="screen">
     <link rel="stylesheet" href="./css/style_about.css" media="screen">
+    <link rel="stylesheet" href="./css/style_articleview.css" media="screen">
     <!-- <link rel="stylesheet" href="./css/styleDropdown.css" media="screen"> -->
     <link rel="stylesheet" href="./css/animate.css" media="screen">
     <link rel="stylesheet" href="./css/font-awesome.min.css" media="screen">
@@ -242,6 +243,13 @@
                 <div class="slide showZoomPopUp showNetworkMenu showCheckMenu showCheckMenuType showCheckMenuMembers showCheckMenuRole showCheckMenuTheme" id="">
 
                 </div>
+
+                <div class="slide " id="articleView">
+
+                  <div id="articleViewInner"></div>
+                </div>
+
+
             </div>
 
 
@@ -254,37 +262,45 @@
 
 
                 <div class="aboutHow">
-                    <p><b>Connect—it</b> <span class="blankAboutWrap">&nbsp;</span> FAQ</p>
-                    <p><b>HOW CAN I CHANGE MY SHIPPING ADDRESS?</b><span class="blankAboutWrap">&nbsp;</span>&nbsp;By default, the last used shipping address will be saved into your Sample Store account. When you are checking out your order, the default shipping address will be displayed and you have the option to amend it if you need to.</p>
-                    <p><b>HOW DO I ACTIVATE MY ACCOUNT?</b><span class="blankAboutWrap">&nbsp;</span>&nbsp;The instructions to activate your account will be sent to your email once you have submitted the registration form. If you did not receive this email, your email service provider&rsquo;s mailing software may be blocking it. You can try checking your junk / spam folder or contact us at help@samplestore.com&nbsp;</p>
-                    <p><b>WHAT DO YOU MEAN BY POINTS? HOW DO I EARN IT?</b><span class="blankAboutWrap">&nbsp;</span> Because you are important to us, we want to know what you think about the products. As an added value, every time you rate the products you earn points which go straight to your account. 1 point is added to your account for every review that you give. You will need those points in order to redeem the sample products. So keep rating the products to keep earning points!</p>
-                    <p><b>WHY IS THERE A CHECKOUT LIMIT? / WHAT ARE ALL THE CHECKOUT LIMITS?</b><span class="blankAboutWrap">&nbsp;</span>&nbsp;Sample Store is a popular spot and gets lots of shoppers at a time. These limits are in place to make sure everyone has a good time trying and purchasing their products. Each account is entitled to only one (1) order of up to 4 different samples per day. Each account is entitled to only one (1) redemption per sample. Your account must have sufficient points before you can checkout the sample products. Kindly clear all pending payments before another checkout.&nbsp;</p>
-                    <p><b>HOW CAN I TRACK MY ORDERS &amp; PAYMENT?</b><span class="blankAboutWrap">&nbsp;</span>&nbsp;After logging into your account, the status of your checkout history can be found under Order History. For orders via registered postage, a tracking number (article tracking number) will be given to you after the receipt given from Singapore Post Limited (SingPost).</p>
-                    <p><b>HOW DO I CANCEL MY ORDERS BEFORE I MAKE A PAYMENT?</b><span class="blankAboutWrap">&nbsp;</span>&nbsp;After logging into your account, go to your Shopping Cart. Here, you will be able to make payment or cancel your order. Note: We cannot give refunds once payment is verified.</p>
-                    <p><b>HOW LONG WILL IT TAKE FOR MY ORDER TO ARRIVE AFTER I MAKE PAYMENT?</b><span class="blankAboutWrap">&nbsp;</span>&nbsp;Members who ship their orders within Singapore should expect to receive their orders within five (5) to ten (10) working days upon payment verification depending on the volume of orders received.&nbsp;If you experience delays in receiving your order, contact us immediately and we will help to confirm the status of your order.</p>
-                    <div class="downloadSlideWrapperInner">
+                    <p><b>Connect—it</b> <span class="blankAboutWrap">&nbsp;</span> <a class="aboutGoTo" data-goto="aboutAbout">About</a><span class="blankAboutWrap">&nbsp;</span><a class="aboutGoTo" data-goto="aboutDownload">Download</a><span class="blankAboutWrap">&nbsp;</span>
+                        <a data-goto="aboutFaq" class="aboutGoTo">FAQ</a>
+                    </p>
+                    <p>This section provides additional information about Connect—it and download links to source data. For any further questions about the project don't hesitate to contact project manager Oscar Widerberg.</p>
 
-                        <div class="downloadSlideSmall downloadSlideInnerChild">
-                            <p>You can here download the full data set of Connect—it.</p>
-                            <p>This data set includes data on: institution acronym, name, date, members, type, role and theme.</p>
-                            <p>Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-                                If you decide to use it, please quote: XXX </p>
-                        </div>
-
-                        <div class="downloadSlideSmallLink downloadSlideInnerChild">
-                            <div class="downloadWrapper">
-                                <p>Download
-                                    <a href="./datasets/memberList.csv"><img src="./css/icons/arrowDownloadW.svg" class="hvr-sink"></a>
-                                </p>
-                            </div>
-                            <p> <b>Filename: </b>memberList.csv</p><br>
-                            <p> <b>Last update: </b>12/11/2015</p><br>
-                            <p><b>File size: </b>36 Kb</p><br>
-                        </div>
-
+                    <div class="aboutAbout">
+                        <p><span class="blankAboutWrap">&nbsp;</span><b>About</b></p>
+                        <p>Connect—it is initiated by Phillip Pattberg and Oscar Widerberg under <a target="_blank" href="http://www.ivm.vu.nl/en/index.aspx">Institute for Envrionmental Studies</a> at Vrije Universiteit Amsterdam. Over the past 20 years,
+                            global efforts to combat climate change have expanded beyond the multilateral, state-led climate governance. Numerous cross-border initiatives comprising both state and non-state actors each contribute to solve these global
+                            problems. Navigating this complexity of contemporary climate governance. Connect—it is designed and built by <a target="_blank" href="http://template01.info">Template</a>.</p>
 
                     </div>
-
+                    <div class="aboutDownload">
+                        <p><span class="blankAboutWrap">&nbsp;</span><b>Download</b></p>
+                        <p>You can <a href="./datasets/memberList.csv">here</a> download the full data set of Connect—it. This data set includes data on: institution acronym, name, date, members, type, role and theme. Additionally you can download the data-set
+                            for the network-view <a href="./datasets/memberNetwork.csv">here</a>.</p>
+                        <p><b>Attribution:</b> You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your
+                            use. If you decide to use it, please quote: XXX </p>
+                    </div>
+                    <div class="aboutFaq">
+                        <p><span class="blankAboutWrap">&nbsp;</span><b>FAQ</b></p>
+                        <p><b>HOW CAN I CHANGE MY SHIPPING ADDRESS?</b><span class="blankAboutWrap">&nbsp;</span>&nbsp;By default, the last used shipping address will be saved into your Sample Store account. When you are checking out your order, the default
+                            shipping address will be displayed and you have the option to amend it if you need to.</p>
+                        <p><b>HOW DO I ACTIVATE MY ACCOUNT?</b><span class="blankAboutWrap">&nbsp;</span>&nbsp;The instructions to activate your account will be sent to your email once you have submitted the registration form. If you did not receive this
+                            email, your email service provider&rsquo;s mailing software may be blocking it. You can try checking your junk / spam folder or contact us at help@samplestore.com&nbsp;</p>
+                        <p><b>WHAT DO YOU MEAN BY POINTS? HOW DO I EARN IT?</b><span class="blankAboutWrap">&nbsp;</span> Because you are important to us, we want to know what you think about the products. As an added value, every time you rate the products
+                            you earn points which go straight to your account. 1 point is added to your account for every review that you give. You will need those points in order to redeem the sample products. So keep rating the products to keep earning
+                            points!
+                        </p>
+                        <p><b>WHY IS THERE A CHECKOUT LIMIT? / WHAT ARE ALL THE CHECKOUT LIMITS?</b><span class="blankAboutWrap">&nbsp;</span>&nbsp;Sample Store is a popular spot and gets lots of shoppers at a time. These limits are in place to make sure
+                            everyone has a good time trying and purchasing their products. Each account is entitled to only one (1) order of up to 4 different samples per day. Each account is entitled to only one (1) redemption per sample. Your account
+                            must have sufficient points before you can checkout the sample products. Kindly clear all pending payments before another checkout.&nbsp;</p>
+                        <p><b>HOW CAN I TRACK MY ORDERS &amp; PAYMENT?</b><span class="blankAboutWrap">&nbsp;</span>&nbsp;After logging into your account, the status of your checkout history can be found under Order History. For orders via registered postage,
+                            a tracking number (article tracking number) will be given to you after the receipt given from Singapore Post Limited (SingPost).</p>
+                        <p><b>HOW DO I CANCEL MY ORDERS BEFORE I MAKE A PAYMENT?</b><span class="blankAboutWrap">&nbsp;</span>&nbsp;After logging into your account, go to your Shopping Cart. Here, you will be able to make payment or cancel your order. Note:
+                            We cannot give refunds once payment is verified.</p>
+                        <p><b>HOW LONG WILL IT TAKE FOR MY ORDER TO ARRIVE AFTER I MAKE PAYMENT?</b><span class="blankAboutWrap">&nbsp;</span>&nbsp;Members who ship their orders within Singapore should expect to receive their orders within five (5) to ten
+                            (10) working days upon payment verification depending on the volume of orders received.&nbsp;If you experience delays in receiving your order, contact us immediately and we will help to confirm the status of your order.</p>
+                    </div>
 
                 </div>
 
@@ -328,6 +344,7 @@
                 <a id="viewIsoList" href="#visualisation/2" class="viewIsoToggle icon" role="button"><img src="./css/icons/list.svg"></a>
                 <a id="viewDesc" href="#visualisation/3" class="icon" role="button"><img src="./css/icons/desc.svg"></a>
                 <a id="viewNetwork" href="#visualisation/4" class="icon" role="button"><img src="./css/icons/network.svg"></a>
+                <a id="" href="#visualisation/5" class="icon" role="button"><img src="./css/icons/article.svg"></a>
 
                 <!-- <br><p class="countBubbles"> </p> -->
 
@@ -350,7 +367,7 @@
 
             <div class="navigateRight">
                 <!--     <a href="#download" class="highlightInfo downloadHeaderLink" data-tooltip="Download the full datasheet"><img class="navArrowHeader" src="./css/icons/arrowDownload.svg"></a> -->
-                <a href="#download" class="downloadHeaderLink"><img class="navArrowHeader" src="./css/icons/arrowDownload.svg"></a>
+                <a href="#about" class="downloadHeaderLink"><img class="navArrowHeader" src="./css/icons/arrowDownload.svg"></a>
                 <p class="downloadHeaderText"></p>
                 <a href="#introductionSlide"><img class="navArrowHeader" src="./css/icons/arrowUp.svg"></a>
 
@@ -475,8 +492,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 
-
-
 <script class="removeMobile" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
 <script class="removeMobile" src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script class="removeMobile" src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
@@ -507,6 +522,7 @@
 <script class="removeMobile" src="./js/scriptsMapPopup.js"></script>
 <script class="removeMobile" src="./js/scriptsDropdown.js"></script>
 <script class="removeMobile" src="./js/scriptsPopup.js"></script>
+<script class="removeMobile" src="./js/scriptsArticleView.js"></script>
 <script class="removeMobile" src="./js/scriptsSidemenu.js"></script>
 
 
