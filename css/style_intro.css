@@ -1,0 +1,89 @@
+.splashContent .hyphen {
+  width: 50vw;
+  background: blue;
+  height: 6px;
+  margin-top:2.3vw;
+  transition: width 0.5s;
+}
+
+.hyphenCollapsed{
+  width: 10vw !important;
+}
+
+.splashContent span {
+  float: left;
+  display: inline-block;
+
+}
+
+.splashContent{
+  display: none;
+  font-family: 'Work Sans', sans-serif;
+line-height: 1.3;
+color: blue;
+margin: 0;
+position: absolute;
+top: 50%;
+transition: top 0.5s;
+
+/*left: 50%;*/
+/*transform: translate(-50%, -50%);*/
+}
+
+.splashContent h1{
+  font-weight: 600;
+  /*letter-spacing: 0.1vw;*/
+  margin-left: 16vw;
+  font-size: 3.5vw;
+  margin-top:-2.3vw;
+}
+
+.slideOutUpHelper{
+  top: 0%;
+}
+
+.splashContentCentered{
+  margin-left: 20vw !important;
+  font-weight: 400 !important;
+
+}
+
+
+
+
+.aboutWrap {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 41px;
+  line-height: 1.2;
+  /*width: calc(50% - 70px);*/
+  z-index: 999999999;
+  padding: 20px 50px 20px 20px;
+  font-weight: 400;
+  float: left;
+  color: blue;
+  position: relative;
+  display: none;
+}
+
+
+
+.aboutWrap h1 {
+  font-size: 60px;
+  letter-spacing: 3px;
+  margin: 0;
+  font-weight: 600;
+}
+.blankAboutWrap{
+  width: 10vw;
+  display: inline-block;
+}
+
+
+.lineAboutWrap{
+  width: 10vw;
+  background: blue;
+  height: 3px;
+  line-height: 0px;
+  display: inline-block;
+
+}

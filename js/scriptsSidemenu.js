@@ -30,7 +30,7 @@ var sidemenu = (function() {
       <div class="sidemenuItem" id="sidemenuDescription"></div>
       <div class="sidemenuItem" id="sidemenuItemInfo"></div>
       <div class="sidemenuItem" id="sidemenuFilters"></div>
-      <div class="sidemenuItem" id="sidemenuLegend"></div>
+      <div class="sidemenuItem sidemenuItemCollapsed" id="sidemenuLegend"></div>
     </div>
   `
     var sidemenuInit = function() {
@@ -44,7 +44,7 @@ var sidemenu = (function() {
         }
     }
 
-    var sidemenuSlideIn = function() {
+    var sidemenuFadeContentIn = function() {
         $('#sidemenu').css({
             'opacity': 1
         })
@@ -55,7 +55,7 @@ var sidemenu = (function() {
         sidemenu.sidemenuRenderContent()
     }
 
-    var sidemenuSlideOut = function() {
+    var sidemenuFadeContentOut = function() {
         $('#sidemenu').children().css({
             'opacity': 0
         })
@@ -133,7 +133,7 @@ var sidemenu = (function() {
                 break;
 
             case 3:
-                filterSort('hide')
+                filterSort('show')
                 filterShow([])
                 break;
 
@@ -211,7 +211,8 @@ var sidemenu = (function() {
     }
 
     var sidemenuCollapsible = function(){
-      $('.sidemenuItem').not("#sidemenuItemInfo").prepend('<div class="sidemenuCollapse"><img class="sidemenuCollapseIcon" src="./css/icons/sideClose.svg"/></div>')
+      $('.sidemenuItem').not("#sidemenuItemInfo, #sidemenuLegend").prepend('<div class="sidemenuCollapse"><img class="sidemenuCollapseIcon" src="./css/icons/sideClose.svg"/></div>')
+      $('#sidemenuLegend').prepend('<div class="sidemenuCollapse"><img class="sidemenuCollapseIcon" src="./css/icons/sideOpen.svg"/></div>')
       $(document).on('click', '.sidemenuCollapse', function() {
         // alert('hey!')
         $(this).parents('.sidemenuItem').toggleClass('sidemenuItemCollapsed')
@@ -227,8 +228,8 @@ var sidemenu = (function() {
     return {
         test: test,
         sidemenuTemplate: sidemenuTemplate,
-        sidemenuSlideIn: sidemenuSlideIn,
-        sidemenuSlideOut: sidemenuSlideOut,
+        sidemenuFadeContentIn: sidemenuFadeContentIn,
+        sidemenuFadeContentOut: sidemenuFadeContentOut,
         sidemenuGetDesc: sidemenuGetDesc,
         sidemenuFiltersTemplate: sidemenuFiltersTemplate,
         sidemenuLegend: sidemenuLegend,

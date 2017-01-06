@@ -18,11 +18,11 @@
 //         typeSingle = row.data[0][6]
 
 //         descSingle = row.data[0][8]
-        
+
 //         // console.log(row.data)
 //         // console.log(descSingle)
 //         descView[acroSingle] = descSingle;
-        
+
 //         descFull = '<div class="descriptionDiv element-itemDesc"><p class="acronym"> '+nameSingle+' ('+acroSingle+')</p> <p class ="smalltext">Date: <b>' +dateSingle+ '</b> Members: <b>'+memberSingle+'</b> Institution: <b>'+instSingle+'</b> Type: <b>'+typeSingle+'</b> </p><p class="description">'+descSingle+'</p></div>'
 //         descCount = descCount + descSingle
 
@@ -43,7 +43,7 @@
 
 
 
-// function getFrequentWords(string, cutOff){ { var cleanString = string.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,""), words = cleanString.split(' '), frequencies = {}, word, frequency, i; for( i=0; i<words.length; i++ ) { word = words[i]; frequencies[word] = frequencies[word] || 0; frequencies[word]++; } words = Object.keys( frequencies ); return words.sort(function (a,b) { return frequencies[b] -frequencies[a];}).slice(0,cutOff).toString(); } ; 
+// function getFrequentWords(string, cutOff){ { var cleanString = string.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,""), words = cleanString.split(' '), frequencies = {}, word, frequency, i; for( i=0; i<words.length; i++ ) { word = words[i]; frequencies[word] = frequencies[word] || 0; frequencies[word]++; } words = Object.keys( frequencies ); return words.sort(function (a,b) { return frequencies[b] -frequencies[a];}).slice(0,cutOff).toString(); } ;
 // }
 
 // var wordsArray = []
@@ -76,21 +76,21 @@
 //   $('.toggleFrequent').on({
 //         firstClick : function()
 //         {
-            
+
 //             toggleWords.push($(this).text())
 //             // console.log(toggleWords);
-//             findFrequentWordShow(toggleWords)  
+//             findFrequentWordShow(toggleWords)
 //             $(this).data('nextClick', 'secondClick');
 //         },
-        
+
 //         secondClick : function()
 //         {
 //             toggleWords.splice(toggleWords.indexOf($(this).text()), 1);
 //              // console.log(toggleWords);
-//             findFrequentWordHide(toggleWords)   
+//             findFrequentWordHide(toggleWords)
 //             $(this).data('nextClick', 'firstClick');
 //         },
-    
+
 //         click : function()
 //         {
 //             var nextClick = $(this).data('nextClick') || 'firstClick';
@@ -125,7 +125,7 @@
 //      var end = [];
 //      var i = 0
 //               $('.highlight:contains("'+entry+'")').each(function(){
-                  
+
 //                  end.push([$(this).position().left,$(this).position().top]);
 
 //                  if (end.length>2){
@@ -244,7 +244,7 @@ function initDescView(){
 
 
 function layoutDesc() {
-  $('#descList').isotope({  
+  $('#descList').isotope({
     itemSelector : '.element-itemDesc',
     layoutMode : 'fitRows',
     getSortData: {
@@ -271,11 +271,11 @@ $('.sort-by-button-group').each(function(){
 if($(this).is(":checked")){
 
   $('#descList').isotope({
-    itemSelector : '.element-itemDesc', 
+    itemSelector : '.element-itemDesc',
     sortBy: $(this).attr('data-sort-by'), sortAscending:{
       name: true,
       members: false
-    } 
+    }
   });
 }
 })
@@ -284,17 +284,16 @@ if($(this).is(":checked")){
 
 
   // sort items on button click
-  $('.sort-by-button-group').on( 'click', 'input', function() {
-    console.log('hey')
+  $(document).on('click', '.sort-by-button-group', function() {
     $('.sort-by-button-group').not($(this)).removeAttr('checked');
     var sortByValue = $(this).attr('data-sort-by');
     console.log(sortByValue)
     $('#descList').isotope({
-      itemSelector : '.element-itemDesc', 
+      itemSelector : '.element-itemDesc',
       sortBy: sortByValue, sortAscending:{
         name: true,
         members: false
-      } 
+      }
     });
   });
 
@@ -306,4 +305,3 @@ if($(this).is(":checked")){
     });
   });
 }
-

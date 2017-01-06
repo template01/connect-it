@@ -12,6 +12,12 @@
     border-right: 2px solid lightgrey;
 }
 
+.sidemenuSlideOut{
+  width: 0 !important;
+  border-right: 0px solid lightgrey !important;
+
+}
+
 #sidemenu * {
     transition: opacity 0.5s cubic-bezier(0, 1, 0.5, 1);
 }

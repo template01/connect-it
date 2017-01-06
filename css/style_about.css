@@ -1,0 +1,76 @@
+
+.aboutHow {
+  font-family: 'Work Sans', sans-serif;
+  color: blue;
+  /*width: calc(100% - 70px);*/
+  background: white;
+  z-index: 999999999;
+  padding: 20px 50px 20px 20px;
+  font-weight: 400;
+  float: left;
+  position: relative;
+  overflow: hidden;
+
+  font-family: 'Work Sans', sans-serif;
+  font-size: 41px;
+  line-height: 1.2;
+}
+
+
+.aboutHow p:first-of-type {
+  /*width: 50%;
+      /*margin-top: 0;*/
+  margin-top: 0px;
+}
+
+.aboutHow b{
+  font-weight: 600;
+}
+
+.aboutHow h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.introTwo p, .introOne p {
+  margin-top: 0;
+}
+
+.aboutHow {
+  /*color: white;*/
+}
+
+.aboutHowSmall {
+  font-size: 19px;
+  line-height: 1.4;
+  font-weight: 500;
+  float: left;
+  width: 19%;
+  margin: 7%;
+  margin-bottom: 0%;
+  height: 125px;
+  display: none;
+}
+
+.aboutHowSmall p {
+  width: calc(90% - 42px) !important;
+  padding: 0;
+  margin: 0;
+  float: left;
+  margin-left: 10px;
+  padding-left: 20px;
+  border-left: 2px solid white;
+}
+
+.aboutHowSmall a {
+  color: white;
+  text-decoration: none;
+}
+
+.aboutHowSmall img {
+  width: 40px;
+  padding: 0;
+  margin: 0;
+}

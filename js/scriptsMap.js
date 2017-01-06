@@ -74,19 +74,6 @@ function addMarkers() {
                 search[0].color = search[0].color + 1
 								search[0].per_country.push(dataList[iaddMarkersLoop])
 							}
-// JSON.parse(countriesPolygons).map(function(d) { return d['label']; }).indexOf('Whereee')
-
-            // }
-
-
-
-
-
-
-            // oms.addMarker(markerSpider)
-
-
-            // var marker = L.marker([dataMaplat, dataMaplon], {icon: locMarker, riseOnHover: true}).addTo(map)
             iaddMarkersLoop++;
 
 
@@ -94,14 +81,11 @@ function addMarkers() {
                 addMarkersLoop(); //  ..  again which will trigger another
             }
 
-
-            if (iaddMarkersLoop == dataList.length) { //  if the counter < 10, call the loop function
-                checkChecks()
-            }
-
         }
+        // window.setTimeout(function() {
 
         addMarkersLoop()
+        // }, 200)
 
 
     }
@@ -156,15 +140,10 @@ function runMap() {
 
     $.getJSON('./js/countrydata/custom.geodetail.json', function(json) {
         countryOverlay = json;
-        // var myStyle = {
-        //     "color": "blue",
-        //     "weight": 0,
-        //     "opacity": 0.65
-        // };
-        //
-        // L.geoJSON(countryOverlay, {
-        //     style: myStyle
-        // }).addTo(map);
+    }).done(function(){
+      window.setTimeout(function() {
+        addMarkers()
+      }, 500)
     });
 
 }

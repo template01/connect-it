@@ -105,7 +105,7 @@
 
 // d3.selectAll(".node").each(function(d) {
 
-    
+
 
 //     widthParentNode = d3.select(this).selectAll('rect').attr('width')
 //     themeWidthSingle = widthParentNode*0.45
@@ -121,7 +121,7 @@
 //     themeCenterThreeLeft = themeCenterThreeMid-themeWidthThree
 //     themeCenterThreeRight = themeCenterThreeMid-(-1*themeWidthThree)
 
-//     var isFirefox = typeof InstallTrigger !== 'undefined'; 
+//     var isFirefox = typeof InstallTrigger !== 'undefined';
 
 //     if(isFirefox){
 
@@ -232,7 +232,7 @@
 //     addD3themes()
 //     positionD3themes()
 //    }
-//   // 
+//   //
 //   //   positionD3themes()
 //   // }
 
@@ -251,7 +251,7 @@
 
 
 //     d3.select('.triangle').selectAll('.node').selectAll('rect').attr("rx",36).attr("ry",36).attr("x",-18).attr("y",-18).attr("width",36).attr("height",36)
-    
+
 //     if(d3.selectAll(".node").length > 1){
 //       if(d3.selectAll(".node").classed("themeElement")){
 //         removeD3themes()
@@ -318,7 +318,7 @@
 
 //   $('.vertical>.element-item').each(function(){
 //     size = $(this).children('.members').text()
-//     $(this).addClass('resizedVert')    
+//     $(this).addClass('resizedVert')
 //     if (size >= 1000) {
 //       $(this).children('p').addClass('vertSizeL');
 //     }
@@ -392,7 +392,7 @@
 //   $('.grid').removeClass('row')
 //   if ($('.grid').find('.explainList').length == 0){
 //     var $newItems = $('<div class="element-item explainList hideWhenBubble"> <p class="acro"> Acronym </p><p class="name"> Name </p> <p class="date"> Date </p> <p class="members"> Members </p> <p class="actors"> Institutions </p> <p class="type"> Type </p> <p class="role"> Role </p><p class="theme"> Theme </p> </div>');
-//     $('.grid').prepend( $newItems).isotope( 'reloadItems' ).isotope({ sortBy: 'original-order' });       
+//     $('.grid').prepend( $newItems).isotope( 'reloadItems' ).isotope({ sortBy: 'original-order' });
 //   }
 
 //   $('#gridWrapper').appendTo('#listView .fp-tableCell')
@@ -465,7 +465,7 @@
 //       // $('.grid').removeClass('row')
 //       // if ($('.grid').find('.explainList').length == 0){
 //       //   var $newItems = $('<div class="element-item explainList hideWhenBubble"> <p class="acro"> Acronym </p><p class="name"> Name </p> <p class="date"> Date </p> <p class="members"> Members </p> <p class="actors"> Institutions </p> <p class="type"> Type </p> <p class="role"> Role </p><p class="theme"> Theme </p> </div>');
-//       //   $('.grid').prepend( $newItems).isotope( 'reloadItems' ).isotope({ sortBy: 'original-order' });       
+//       //   $('.grid').prepend( $newItems).isotope( 'reloadItems' ).isotope({ sortBy: 'original-order' });
 //       // }
 //       // layoutVertical();
 //       // $('.grid .members').show();
@@ -501,7 +501,7 @@
 //         $('.grid.row .members').hide();
 
 //       }
-      
+
 //       $('.element-item').children('p').removeClass('vertSizeL vertSizeM vertSizeS vertSizeXS')
 //   })
 
@@ -514,12 +514,12 @@
 //     if ($('.element-item').hasClass('themeElement')){
 //       $('.element-item').removeClass('themeElement')
 //       $('.element-itemMarker').removeClass('themeElement')
-//       removePositionD3themes()  
+//       removePositionD3themes()
 //       removeD3themes()
 //     } else {
 //       // themeElement()
 //         $('.element-item').addClass('themeElement')
-//         $('.element-itemMarker').addClass('themeElement') 
+//         $('.element-itemMarker').addClass('themeElement')
 //         addD3themes()
 //         positionD3themes()
 //         // d3.selectAll(".node").classed("themeElement", true)
@@ -561,7 +561,7 @@
 //   }
 
 // function toggleTypeElement() {
-//   $('.showType').change(function(){   
+//   $('.showType').change(function(){
 //     if ($('.element-item').hasClass('typeElement')){
 //       $('.element-item').removeClass('typeElement')
 //       typeElementAllOrg()
@@ -605,11 +605,11 @@
 
 // function appendThemes() {
 //   $('.grid.vertical>.element-item>.theme>span').each(function(){
-  
+
 //   if ($(this).is(':contains("1")')) {
 //      $(this).html('Carbon Pricing and Trading')
 //   }
-  
+
 //   if ($(this).is(':contains("2")')) {
 //      $(this).html('Energy Access')
 //   }
@@ -700,11 +700,11 @@
 //   $('.sort-by-button-group').on( 'click', 'input', function() {
 //     $('.sort-by-button-group').not($(this)).removeAttr('checked');
 //     var sortByValue = $(this).attr('data-sort-by');
-//     $('.grid').isotope({ 
+//     $('.grid').isotope({
 //       sortBy: sortByValue, sortAscending:{
 //         name: true,
 //         members: false
-//       } 
+//       }
 //     });
 //   });
 
