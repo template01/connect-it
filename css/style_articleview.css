@@ -1,13 +1,15 @@
 #articleView {}
 
 .articleItem {
-    margin: 20px;
-    margin-bottom: 20px;
+    margin: 10px;
+    margin-bottom: 0px;
     display: inline-block;
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
+    /*width: 100%;*/
+    box-sizing: border-box;
     clear: both;
     border-bottom: 1px solid lightgrey;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .articleItem:not(:first-of-type){
@@ -29,6 +31,7 @@
     margin: 0;
     margin-bottom: 20px;
     margin-left: 380px;
+    margin-right: 20px;
     color: blue;
 
 
@@ -44,10 +47,20 @@
 }
 
 .articleItem h3 {
+    /*padding-top: 10px;*/
+    /*display: block;*/
     font-size: 16px;
     font-weight: 600;
     margin-top: 0px;
+    line-height: 18px;
     margin-bottom: 30px;
+}
+
+.articleItem .meta{
+  color: blue;
+  line-height: 0;
+  display: block;
+  margin-top: -9px;
 }
 
 .articleItem p {
@@ -66,7 +79,7 @@
 }
 
 
-.articleItem a:hover:after{
+.articleItem .fullArticle:hover:after{
   content:'Sorry! This is just a fake button!';
   background:blue;
   margin-left: 5px;
@@ -89,7 +102,8 @@
 
 .articleItemDesc{
   margin-left: 20px;
-  width: calc(100% - 380px);
+  margin-right: 20px;
+  width: calc(100% - 400px);
   float: right;
 
 }

@@ -2,10 +2,10 @@
     position: fixed;
     overflow-x: hidden;
     box-sizing: border-box;
-    height: calc(100% - 64px);
+    height: calc(100% - 44px);
     width: 360px;
     z-index: 1110;
-    top: 64px;
+    top: 44px;
     background: white;
     transition: width 0.5s cubic-bezier(0, 1, 0.5, 1);
     opacity: 0;
@@ -23,10 +23,14 @@
 }
 
 .sidemenuItem {
-    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid lightgrey;
     display: inline-block;
-    width: calc(100% - 40px)
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .sidemenuItem>*:nth-child(-n+2) {
@@ -50,7 +54,7 @@
 .sidemenuCollapse {
     /*float: right;*/
     position: absolute;
-    right: 20px;
+    right: 10px;
     cursor: pointer;
 }
 

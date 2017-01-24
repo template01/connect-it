@@ -22,7 +22,7 @@ var visualisationDescriptions = [{
     path: "./css/icons/network.svg"
 }, {
     name: "Article view",
-    desc: "The 'article view' provides casestudies involving various members. WARNING: Still complete mockup-material.",
+    desc: "The 'article view' provides casestudies involving various members.<br><b>ATTENTION: This view is a proof of concept. Initiative information does not correspond with actual data.</b>",
     path: "./css/icons/network.svg"
 }, ]
 
@@ -186,22 +186,22 @@ var sidemenu = (function() {
 
     var sidemenuFiltersTemplate = function() {
         filterShow = `<div class="filterOptionWrapper"><p>Show:</p>
-        <li><input type="checkbox" value="showName" class="checkSortShow showName" autocomplete="off" /><label class="checkSortShow showName"><span><span></span></span>name</label></li>
-        <li><input type="checkbox" value="showDate" class="checkSortShow showDate" autocomplete="off"/><label  class="checkSortShow showDate"><span><span></span></span>date</label></li>
-        <li><input type="checkbox" value="showMembers" class="checkSortShow showMembers" autocomplete="off"/><label class="checkSortShow showMembers"><span><span></span></span>members</label></li>
-        <li><input type="checkbox" value="showType" class="checkSortShow showType" autocomplete="off"/><label class="checkSortShow showType"><span><span></span></span>type</label></li>
-        <li><input type="checkbox" value="showRole" class="checkSortShow showRole" autocomplete="off"/><label class="checkSortShow showRole"><span><span></span></span>role</label></li>
-        <li><input type="checkbox" value="showTheme" class="checkSortShow showTheme" autocomplete="off"/><label class="checkSortShow showTheme"><span><span></span></span>theme</label></li>
+        <li><input type="checkbox" value="showName" class="checkSortShow showName" autocomplete="off" /><label class="checkSortShow showName"><span><span></span></span>Name</label></li>
+        <li><input type="checkbox" value="showDate" class="checkSortShow showDate" autocomplete="off"/><label  class="checkSortShow showDate"><span><span></span></span>Date</label></li>
+        <li><input type="checkbox" value="showMembers" class="checkSortShow showMembers" autocomplete="off"/><label class="checkSortShow showMembers"><span><span></span></span>Members</label></li>
+        <li><input type="checkbox" value="showType" class="checkSortShow showType" autocomplete="off"/><label class="checkSortShow showType"><span><span></span></span>Type</label></li>
+        <li><input type="checkbox" value="showRole" class="checkSortShow showRole" autocomplete="off"/><label class="checkSortShow showRole"><span><span></span></span>Role</label></li>
+        <li><input type="checkbox" value="showTheme" class="checkSortShow showTheme" autocomplete="off"/><label class="checkSortShow showTheme"><span><span></span></span>Theme</label></li>
         </div>`
 
         filterSort = `<div class="filterOptionWrapper" id="sidemenuFiltersSort"><p>Sort:</p>
-        <li><input data-sort-by="acro" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>acro</label></li>
-        <li><input data-sort-by="name" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>name</label></li>
-        <li><input data-sort-by="date" type="checkbox" value="showDate" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>date</label></li>
-        <li><input data-sort-by="members" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>members</label></li>
-        <li><input data-sort-by="role" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>role</label></li>
-        <li><input data-sort-by="type" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>type</label></li>
-        <li><input data-sort-by="theme" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>theme</label></li>
+        <li><input data-sort-by="acro" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>Acronym</label></li>
+        <li><input data-sort-by="name" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>Name</label></li>
+        <li><input data-sort-by="date" type="checkbox" value="showDate" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>Date</label></li>
+        <li><input data-sort-by="members" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>Members</label></li>
+        <li><input data-sort-by="role" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>Role</label></li>
+        <li><input data-sort-by="type" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>Type</label></li>
+        <li><input data-sort-by="theme" type="checkbox" value="showName" class="sort-by-button-group" autocomplete="off"><label class=""><span><span></span></span>Theme</label></li>
         </div>`
 
         $('#sidemenuFilters').append("<p class='sidemenuItemTitle'>Tools</p>" + "<div class='filterOptionWrapperOuter'>" + filterShow + filterSort + "</div>")

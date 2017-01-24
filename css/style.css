@@ -266,13 +266,14 @@ body {
     max-height: 0px;
     /*height: 0px;*/
     overflow: hidden;
-    height: 64px;
-    width: calc(100% - 40px);
+    height: 44px;
+    width: 100%;
+    box-sizing: border-box;
     z-index: 1111;
     top: 0;
     padding: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 0px;
     transition-property: max-height;
     transition-duration: 0.5s;
@@ -308,11 +309,11 @@ body {
 }
 
 .autoHeight div {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .headerBackgroundautoHeight {
-    height: 62px;
+    height: 42px;
     border-bottom: 2px solid blue;
     padding-top: 0px !important;
 }
@@ -395,7 +396,7 @@ input[type=checkbox]:not(old):checked+label>span:before {
 }
 
 .downloadHeaderText:after {
-    content: 'Go to info and download section'
+    content: 'Go to info and FAQ section'
 }
 
 .downloadHeaderLink:hover+.downloadHeaderText {
@@ -466,7 +467,7 @@ button:hover {
 
 .icon img {
     cursor: pointer;
-    width: 25px;
+    width: 24px;
     margin-left: 10px;
     margin-right: 3px;
     float: initial;
@@ -483,10 +484,10 @@ button:hover {
   }*/
 
 .icon img:hover {
-    width: 29px;
+    width: 26px;
     margin-top: -15px;
-    margin-left: 8px;
-    margin-right: 1px;
+    margin-left: 9px;
+    margin-right: 2px;
 }
 
 .open {
@@ -504,7 +505,8 @@ button:hover {
 }
 
 .close img {
-    width: 19px;
+    padding-top: 3px;
+    width: 11px;
     margin: 0px;
 }
 
@@ -555,7 +557,7 @@ button:hover {
     border-bottom: 2px solid blue;
     position: absolute;
     background-color: rgba(255, 255, 255, 1);
-    top: 64px;
+    top: 44px;
     overflow: hidden;
 }
 
@@ -695,18 +697,18 @@ button:hover {
 }
 
 .row.grid {
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 #articleViewInner {
-    margin-top: 62px;
-    height: calc(100% - 62px)!important;
+    margin-top: 42px;
+    height: calc(100% - 42px)!important;
     overflow-y: auto;
 }
 
 #gridWrapper {
-    margin-top: 62px;
-    height: calc(100% - 62px)!important;
+    margin-top: 42px;
+    height: calc(100% - 42px)!important;
     overflow-y: scroll;
 }
 
@@ -827,15 +829,26 @@ pre {
 .grid.vertical .element-item {
     max-width: initial;
     max-height: initial;
-    width: calc(100% - 10px);
+    box-sizing: border-box;
+    width: 100%;
     height: 40px;
     border-radius: 0;
     background-color: transparent;
     min-height: initial;
-    padding: 10px 5px;
+    padding: 10px 10px;
     margin: 0;
     border-bottom: 1px solid gainsboro;
 }
+
+.grid.vertical .element-item:first-of-type p{
+  white-space: nowrap;
+  /*width: 12em;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
 
 .explainList {
     height: 10px !important;
@@ -869,38 +882,58 @@ pre {
 .grid.vertical .element-item p:nth-of-type(8) {
   width: 23%;
 }*/
+.grid.vertical .element-item p{
+  box-sizing: border-box;
+}
 
 .grid.vertical .element-item p, .grid.vertical .element-item h2 {
     float: left;
     margin: inherit;
-    width: 15%;
+    /*width: 15%;*/
     font-size: 14px;
     line-height: 1.5;
+    overflow: hidden;
 }
 
 .grid.vertical .element-item p:nth-of-type(1) {
     display: none;
 }
 
+.grid.vertical .element-item p:not(:nth-of-type(1)) {
+  padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+.grid.vertical .element-item p:nth-of-type(2){
+  padding-left: 0px;
+
+}
+.grid.vertical .element-item p:last-child{
+  padding-right: 0px;
+}
+
 .grid.vertical .element-item p:nth-of-type(2) {
-    padding-left: 15px;
-    width: 10%;
-}
-
-.grid.vertical .element-item p:nth-of-type(4), .grid.vertical .element-item p:nth-of-type(5), .grid.vertical .element-item p:nth-of-type(7) {
-    width: 6%;
-}
-
-.grid.vertical .element-item p:nth-of-type(6) {
-    width: 8%;
+    /*padding-left: 15px;*/
+    width: 16%;
+    word-break: break-all;
 }
 
 .grid.vertical .element-item p:nth-of-type(3) {
-    width: 22%;
+    width: 19%;
 }
 
+ .grid.vertical .element-item p:nth-of-type(6){
+   display: none
+ }
+
+.grid.vertical .element-item p:nth-of-type(4), .grid.vertical .element-item p:nth-of-type(5), .grid.vertical .element-item p:nth-of-type(7) {
+    width: 9%;
+}
+
+
 .grid.vertical .element-item p:nth-of-type(8), .grid.vertical .element-item p:nth-of-type(9) {
-    width: 20%;
+    width: 19%;
 }
 
 .grid.vertical .acro {
@@ -1064,7 +1097,7 @@ pre {
     color: blue;
     width: 100%;
     text-align: center;
-    line-height: 65px;
+    line-height: 44px;
     font-size: 19px;
     font-weight: 400;
 }
@@ -1082,9 +1115,9 @@ pre {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 11px;
-    padding-right: 20px;
-    width: 20px;
+    padding: 8px;
+    padding-right: 14px;
+    width: 14px;
 }
 
 .navArrowDown {
@@ -1101,9 +1134,9 @@ pre {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 11px;
-    padding-right: 20px;
-    width: 20px;
+    padding: 8px;
+    padding-right: 14px;
+    width: 14px;
     z-index: 99999999999;
 }
 
@@ -1111,9 +1144,9 @@ pre {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 11px;
-    padding-right: 20px;
-    width: 20px;
+    padding: 8px;
+    padding-right: 14px;
+    width: 14px;
 }
 
 .introFooter {
@@ -1125,14 +1158,14 @@ pre {
 }
 
 .navFooterHeight {
-    height: 65px;
+    height: 44px;
     border-top: 2px solid blue;
 }
 
 .zoomPopUpHeight {
-    height: 63px;
+    height: 42px;
     border-top: 2px solid lightgrey;
-    max-height: 65px;
+    max-height: 44px;
     transition-property: height, max-height;
     transition-duration: .5s;
     transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
@@ -1238,9 +1271,9 @@ pre {
     padding: 20px;
     float: left;
     position: absolute;
-    top: 62px;
+    top: 42px;
     z-index: 10;
-    height: calc(100% - 62px);
+    height: calc(100% - 42px);
     display: none;
 }
 
@@ -1302,7 +1335,7 @@ pre {
 }
 
 .descWrapSingle:first-child {
-    margin-top: 62px;
+    margin-top: 42px;
 }
 
 .descWrapSingle p:nth-of-type(1) {
@@ -1319,7 +1352,7 @@ pre {
     position: fixed;
     /*background-color: red;*/
     /*z-index: 20;*/
-    top: 62px;
+    top: 42px;
     display: none;
     -webkit-user-select: none;
     /* Chrome all / Safari all */
@@ -1429,8 +1462,8 @@ line.link {
     width: calc(100% - 10px);
     float: left;
     overflow-y: scroll;
-    margin-top: 62px;
-    height: calc(100% - 62px) !important;
+    margin-top: 42px;
+    height: calc(100% - 42px) !important;
 }
 
 .highlight {
@@ -1443,11 +1476,12 @@ line.link {
 }
 
 .descriptionDiv {
-    width: calc(33.35% - 32px);
+    width:33.33333%;
+    box-sizing: border-box;
     float: left;
     /*height: 300px;*/
     overflow: hidden;
-    margin: 4px;
+    /*margin: 4px;*/
     padding: 10px;
     font-size: 14px;
 }
@@ -2079,12 +2113,12 @@ line.link {
         padding-right: 20px;
     }
     .autoHeight div {
-        padding-top: 22px;
+        padding-top: 10px;
     }
     .navArrowHeader {
-        padding: 12px;
+        /*padding: 12px;*/
     }
-    .navArrowIntro {
+    /*.navArrowIntro {
         padding: 12px;
     }
     .navArrowDown {
@@ -2092,18 +2126,18 @@ line.link {
     }
     .navArrowUp {
         padding: 12px;
-    }
+    }*/
     .icon img {
-        margin-top: -2px;
+        /*margin-top: -1px;*/
         transition-property: width, margin;
         transition-duration: .1s;
         transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
     }
     .icon img:hover {
-        width: 29px;
+        width: 26px;
         margin-top: -15px;
-        margin-left: 8px;
-        margin-right: 1px;
+        margin-left: 9px;
+        margin-right: 2px;
     }
     .headerDesc h1, .zoomPopUp p {
         font-size: 16px;
@@ -2155,7 +2189,7 @@ line.link {
         width: 13px;
     }
     .downloadHeaderText:after {
-        content: 'Download';
+        content: 'Info/FAQ';
     }
 }
 

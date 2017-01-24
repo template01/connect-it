@@ -38,13 +38,19 @@ transition: top 0.5s;
   margin-top:-2.3vw;
 }
 
+.tagLine{
+  font-size: 2.35vw !important;
+  margin-left: 10vw !important;
+  font-weight: 400 !important;
+
+}
+
 .slideOutUpHelper{
   top: 0%;
 }
 
 .splashContentCentered{
   margin-left: 20vw !important;
-  font-weight: 400 !important;
 
 }
 
@@ -57,7 +63,7 @@ transition: top 0.5s;
   line-height: 1.2;
   /*width: calc(50% - 70px);*/
   z-index: 999999999;
-  padding: 20px 50px 20px 20px;
+  padding: 20px 20px 20px 20px;
   font-weight: 400;
   float: left;
   color: blue;
@@ -85,5 +91,12 @@ transition: top 0.5s;
   height: 3px;
   line-height: 0px;
   display: inline-block;
+
+}
+
+@media only screen and (max-width: 1280px) {
+  .lineAboutWrap{
+    height: 2px;
+  }
 
 }

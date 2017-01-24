@@ -15,7 +15,7 @@ function introNavigation() {
             $('.splashContent').fadeOut(300)
 
             setTimeout(function() {
-                $('.splashContent').empty().append('<h1 class="splashContentCentered">Visualizing global climate initiatives</h1>').fadeIn(200)
+                $('.splashContent').empty().append('<h1 class="tagLine">Visualizing cooperative initiatives for enhanced global climate action</h1>').fadeIn(200)
 
                 setTimeout(function() {
                     // $('.splashContent').addClass('animated').addClass('slideOutUpHelper').addClass('slideOutUp').fadeOut(200)
@@ -32,8 +32,9 @@ function introNavigation() {
                             }, 1500);
                         }, 2000);
 
-                    }, 500);
-                }, 1600);
+                    }, 700);
+                }, 2000);
+
             }, 800);
 
 

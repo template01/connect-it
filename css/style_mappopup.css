@@ -1,6 +1,6 @@
 .leaflet-popup-content{
   display: table;
-  margin: 15px !important;
+  margin: 8px !important;
   min-width: 360px;
   border: 0;
 }
@@ -8,6 +8,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   max-height: 515px;
+  border: 1px solid lightgrey;
 }
 
 .leaflet-popup-close-button{
@@ -26,7 +27,7 @@
 .mapPopupInnerHeader{
   width: calc(100% - 10px);
   margin: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   clear: both;
   display: inline-block;
 

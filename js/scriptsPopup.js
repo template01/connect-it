@@ -130,7 +130,7 @@ $(document).on('click', '.element-itemMarker, .node, .element-item, .mapPopupSin
 
     $('#sidemenuItemInfo').append('<div class="popUpWrapper"><div class="close"><img src="./css/icons/close.svg"></div>' + name + '<p class="smalltext">Acronym: ' + acro + ' Date: ' + date + ' Members: ' + members + ' Type: ' + type + ' Theme: <b>' + parsedTheme + parsedTheme2 + parsedTheme3 + '</b></p>' + desc + '</div>')
     if ($('.graphWrap').is(':visible')) {
-        $('.popUpWrapper').append('<div data-savedacro="' +  $(this).attr('data-acro') + '" class="membersWrapperLoad"><p class="smalltext popUpLoadLinks">Load memeber information →</p> </div>')
+        $('.popUpWrapper').append('<div data-savedacro="' +  $(this).attr('data-acro') + '" class="membersWrapperLoad"><p class="smalltext popUpLoadLinks">Load member information →</p> </div>')
     }
 
     // $('.popUpWrapper').append('<div class="membersWrapper"><p class="smalltext">Member information:</p></div>')

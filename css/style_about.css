@@ -5,7 +5,7 @@
   /*width: calc(100% - 70px);*/
   background: white;
   z-index: 999999999;
-  padding: 20px 50px 20px 20px;
+  padding: 12px 50px 20px 20px;
   font-weight: 400;
   float: left;
   position: relative;
@@ -21,12 +21,23 @@
 }
 
 .faq .navArrowUp{
-  padding: 20px !important;
+  padding: 12px !important;
+  padding-right: 20px !important;
 }
 
 .aboutHow a{
   border-bottom: 3px solid blue;
 }
+
+
+@media only screen and (max-width: 1280px) {
+  .aboutHow a{
+    border-bottom: 2px solid blue;
+  }
+
+}
+
+
 
 .aboutHow p:first-of-type {
   /*width: 50%;

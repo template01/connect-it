@@ -485,6 +485,12 @@ function layoutVertical() {
         $('.element-item').removeClass('resizedVert')
         $('.element-item').children('p').removeClass('vertSizeXS vertSizeS vertSizeM vertSizeL')
     }
+
+    $('.grid').isotope();
+    window.setTimeout(function(){
+      $('.grid').isotope();
+    },500)
+
 }
 
 function layoutRow() {
@@ -848,6 +854,11 @@ function countThemes() {
         $(this).filter(function() {
             return $(this).text() === "11";
         }).parents('.element-item').prepend('<p class="themeCount">' + getCount(11) + '</p>')
+
+        $(this).filter(function() {
+            return $(this).text() === "12";
+        }).parents('.element-item').prepend('<p class="themeCount">' + getCount(12) + '</p>')
+
 
     })
 
