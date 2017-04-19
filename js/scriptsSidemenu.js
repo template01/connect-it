@@ -14,7 +14,7 @@ var visualisationDescriptions = [{
     path: "./css/icons/list.svg"
 }, {
     name: "Description view",
-    desc: "The 'description view' displays the description if each institution in a collected overview",
+    desc: "The 'description view' displays the description of each institution in a collected overview",
     path: "./css/icons/desc.svg"
 }, {
     name: "Network view",
