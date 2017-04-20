@@ -7,7 +7,7 @@ var map = L.map('map', {
 
 var markerStart = false
 
-var themeVarMap = '<div class="themeWrapper"><img class="themeImg1" src="./svg/theme1.svg"><img class="themeImg2" src="./svg/theme2.svg"><img class="themeImg3" src="./svg/theme3.svg"><img class="themeImg4" src="./svg/theme4.svg"><img class="themeImg5" src="./svg/theme5.svg"><img class="themeImg6" src="./svg/theme6.svg"><img class="themeImg7" src="./svg/theme7.svg"><img class="themeImg8" src="./svg/theme8.svg"><img class="themeImg9" src="./svg/theme9.svg"><img class="themeImg10" src="./svg/theme10.svg"><img class="themeImg11" src="./svg/theme11.svg"><img class="themeImg12" src="./svg/theme12.svg"><img class="themeImg13" src="./svg/theme13.svg"></div>'
+var themeVarMap = '<div class="themeWrapper"><img class="themeImg1" src="./svg/theme1.svg"><img class="themeImg2" src="./svg/theme2.svg"><img class="themeImg3" src="./svg/theme3.svg"><img class="themeImg4" src="./svg/theme4.svg"><img class="themeImg5" src="./svg/theme5.svg"><img class="themeImg6" src="./svg/theme6.svg"><img class="themeImg7" src="./svg/theme7.svg"><img class="themeImg8" src="./svg/theme8.svg"><img class="themeImg9" src="./svg/theme9.svg"><img class="themeImg10" src="./svg/theme10.svg"><img class="themeImg11" src="./svg/theme11.svg"><img class="themeImg12" src="./svg/theme12.svg"></div>'
 
 
 

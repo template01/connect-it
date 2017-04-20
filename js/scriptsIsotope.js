@@ -696,7 +696,7 @@ function appendThemes() {
         }
 
         if ($(this).is(':contains("4")')) {
-            $(this).html('Financing')
+            $(this).html('Climate finance')
         }
 
         if ($(this).is(':contains("5")')) {
@@ -704,11 +704,11 @@ function appendThemes() {
         }
 
         if ($(this).is(':contains("6")')) {
-            $(this).html('MRV')
+            $(this).html('Mitigation (general)')
         }
 
         if ($(this).is(':contains("7")')) {
-            $(this).html('Mitigation')
+            $(this).html('MRV')
         }
 
         if ($(this).is(':contains("8")')) {
@@ -716,17 +716,19 @@ function appendThemes() {
         }
 
         if ($(this).is(':contains("9")')) {
-            $(this).html('Resilience and Adaptation')
+            $(this).html('CCS')
         }
 
         if ($(this).is(':contains("10")')) {
-            $(this).html('Standard Setting')
+            $(this).html('Non-CO2 GHGs')
         }
 
         if ($(this).is(':contains("11")')) {
-            $(this).html('Transportation')
+            $(this).html('Urban climate action')
         }
-
+        if ($(this).is(':contains("12")')) {
+            $(this).html('Sectoral')
+        }
     })
 
 }
