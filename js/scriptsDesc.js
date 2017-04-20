@@ -2,7 +2,15 @@ function initDescView(){
 
   if($('#descList').children().length == 0){
 
-    for (var i = 1; i < dataList.length; i++) {
+    for (var i = 0; i < dataList.length; i++) {
+
+
+          if(dataList[i].website.length>0){
+            website = ` (<a href="` + dataList[i].website  + `" target="_blank">website</a>)`
+
+          }else {
+            website = ``
+          }
 
           descFull = `<div class="descriptionDiv element-itemDesc" data-acro=
           "`+dataList[i].acro+`" data-date="`+dataList[i].date+`" data-desc=
@@ -10,8 +18,8 @@ function initDescView(){
           "`+dataList[i].name+`" data-role="`+dataList[i].role+`" data-theme=
           "`+dataList[i].theme+`" data-theme2="`+dataList[i].theme2+`" data-theme3=
           "`+dataList[i].theme3+`" data-type="`+dataList[i].type+`">
-              <p class="acronym">`+dataList[i].name+` (`+dataList[i].acro+`)</p>
-              <p class="smalltext">Date: <b>` +dataList[i].date+ `</b> Members:
+              <p class="acronym">`+dataList[i].name+website+`</p>
+              <p class="smalltext">Acronym: <b>` +dataList[i].acro+ `</b> Date: <b>` +dataList[i].date+ `</b> Members:
               <b>`+dataList[i].members+`</b> Institution:
               <b>`+dataList[i].actors+`</b> Type: <b>`+dataList[i].type+`</b></p>
               <p class="description">`+dataList[i].desc+`</p>

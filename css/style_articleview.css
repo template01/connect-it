@@ -80,7 +80,7 @@
 
 
 .articleItem .fullArticle:hover:after{
-  content:'Sorry! This is just a fake button!';
+  /*content:'Sorry! This is just a fake button!';*/
   background:blue;
   margin-left: 5px;
   color: white;

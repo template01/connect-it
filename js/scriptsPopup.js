@@ -73,9 +73,6 @@ function parseTheme(themeNumber) {
 
 $(document).on('click', '.element-itemMarker, .node, .element-item, .mapPopupSingleInitiative', function() {
 
-    // alert('element')
-    // alert($(this).attr('data-desc'))
-
     // small text elements
     acro = '<b>' + $(this).attr('data-acro') + '</b>'
     members = '<b>' + $(this).attr('data-members') + '</b>'
@@ -85,7 +82,12 @@ $(document).on('click', '.element-itemMarker, .node, .element-item, .mapPopupSin
     theme2 = $(this).attr('data-theme2')
     theme3 = $(this).attr('data-theme3')
     website = $(this).attr('data-website')
-    name = '<h1>' + $(this).attr('data-name') + ' (<a href="' + website + '" target="_blank">website</a>) </h1>'
+    if(website.length<=0){
+      name = '<h1>' + $(this).attr('data-name') + '</h1>'
+    }else{
+      name = '<h1>' + $(this).attr('data-name') + ' (<a href="' +  website + '" target="_blank">website</a>) </h1>'
+
+    }
 
 
     if (typeof theme != 'undefined') {

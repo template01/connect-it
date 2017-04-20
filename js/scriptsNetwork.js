@@ -381,6 +381,8 @@ function runNetwork() {
 
                     d3.select(this).attr('role', searchJson[0].role)
                     d3.select(this).attr('data-members', searchJson[0].members)
+                    d3.select(this).attr('data-website', searchJson[0].website)
+                    d3.select(this).attr('data-date', searchJson[0].date)
                     d3.select(this).attr('data-type', searchJson[0].type)
                     d3.select(this).attr('data-theme', searchJson[0].theme)
                     d3.select(this).attr('data-theme2', searchJson[0].theme2)

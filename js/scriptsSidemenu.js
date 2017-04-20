@@ -3,26 +3,32 @@ var app = document.getElementById('app')
 var visualisationDescriptions = [{
     name: "Geography view",
     desc: "The 'geography view' displays the headquarters of each institution",
+    tip: "Tip: Click on a highlighted country to use the tools. Not all tools in this view are available",
     path: "./css/icons/map.svg"
 }, {
     name: "Disc view",
     desc: "The 'disc view' provides a flat view with multiple options for analysis",
+    tip: "Tip: In this view you can use all tools",
     path: "./css/icons/bubble.svg"
 }, {
     name: "List view",
     desc: "Similar to the 'disc view' the 'list view' provides a flat view with multiple options for analysis",
+    tip: "Tip: In this view you can use all tools, except for the 'show'-options Name, Date and Theme",
     path: "./css/icons/list.svg"
 }, {
     name: "Description view",
     desc: "The 'description view' displays the description of each institution in a collected overview",
+    tip: "Tip: In this view you can only sort",
     path: "./css/icons/desc.svg"
 }, {
     name: "Network view",
     desc: "The 'network view' links institutions by shared members",
+    tip: "Tip: In the network you can only change the 'show'-options for: Members, Type, Role and Theme",
     path: "./css/icons/network.svg"
 }, {
     name: "Article view",
     desc: "The 'article view' provides casestudies involving various members.<br><b>ATTENTION: This view is a proof of concept. Initiative information does not correspond with actual data.</b>",
+    tip: "Tip: In this view you can only change the 'show'-options for: Members, Type, Role and Theme",
     path: "./css/icons/network.svg"
 }, ]
 
@@ -110,14 +116,34 @@ var sidemenu = (function() {
 
         }
 
+        toggleItemInfo = function(toggle) {
+            if (toggle === "show") {
+                $('#sidemenuItemInfo').show()
+            }
+            if (toggle === "hide") {
+                $('#sidemenuItemInfo').hide()
+            }
+        }
+
+
         filterSort = function(toggle) {
             if (toggle === "show") {
+                $('#sidemenuFiltersSort').find('input').removeClass('checkNoAction')
                 $('#sidemenuFiltersSort').find('label').removeClass('checkNoAction')
             }
             if (toggle === "hide") {
+                $('#sidemenuFiltersSort').find('input').addClass('checkNoAction')
                 $('#sidemenuFiltersSort').find('label').addClass('checkNoAction')
             }
         }
+
+
+        addToolDisclaimer = function(text) {
+            // return 'hey'
+            $('#sidemenuFilters').find("#toolDisclamier").remove()
+            $('#sidemenuFilters').append("<p id='toolDisclamier' class='sidemenuItemDisclamier'>"+text+"</p>")
+        }
+
 
         toggleFilters = function(toggle) {
             if (toggle === "show") {
@@ -143,6 +169,8 @@ var sidemenu = (function() {
                 toggleLegend('show')
                 filterShow([])
                 filterSort('hide')
+                toggleItemInfo('show')
+                addToolDisclaimer(visualisationDescriptions[currentslideParameter].tip)
                 break;
 
             case 1:
@@ -150,6 +178,8 @@ var sidemenu = (function() {
                 toggleLegend('show')
                 filterSort('show')
                 filterShow(['showName', 'showDate', 'showMembers', 'showType', 'showRole', 'showTheme'])
+                toggleItemInfo('show')
+                addToolDisclaimer(visualisationDescriptions[currentslideParameter].tip)
                 break;
 
             case 2:
@@ -157,13 +187,17 @@ var sidemenu = (function() {
                 toggleLegend('show')
                 filterSort('show')
                 filterShow(['showMembers', 'showType', 'showRole'])
+                toggleItemInfo('show')
+                addToolDisclaimer(visualisationDescriptions[currentslideParameter].tip)
                 break;
 
             case 3:
                 toggleFilters('show')
-                toggleLegend('show')
+                toggleLegend('hide')
                 filterSort('show')
                 filterShow([])
+                toggleItemInfo('hide')
+                addToolDisclaimer(visualisationDescriptions[currentslideParameter].tip)
                 break;
 
             case 4:
@@ -171,12 +205,16 @@ var sidemenu = (function() {
                 toggleLegend('show')
                 filterSort('hide')
                 filterShow(['showMembers', 'showType', 'showRole', 'showTheme'])
+                toggleItemInfo('show')
+                addToolDisclaimer(visualisationDescriptions[currentslideParameter].tip)
                 break;
             case 5:
                 toggleFilters('show')
                 toggleLegend('show')
                 filterSort('hide')
                 filterShow(['showMembers', 'showType', 'showRole', 'showTheme'])
+                toggleItemInfo('show')
+                addToolDisclaimer(visualisationDescriptions[currentslideParameter].tip)
                 break;
         }
 

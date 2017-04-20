@@ -31,6 +31,7 @@
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 .sidemenuItem>*:nth-child(-n+2) {
@@ -54,6 +55,7 @@
 .sidemenuCollapse {
     /*float: right;*/
     position: absolute;
+    top: 13px;
     right: 10px;
     cursor: pointer;
 }
@@ -71,9 +73,15 @@
 }
 
 .sidemenuItemTitle {
-    margin-bottom: 10;
-    margin-top: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
     color: blue;
+}
+
+.sidemenuItemDisclamier{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: blue;
 }
 
 #sidemenuDescription {
@@ -106,8 +114,13 @@
     /*display: flex;*/
 }
 
+.sidemenuItemCollapsed .filterOptionWrapperOuter {
+  display: initial !important;
+}
+
 #sidemenuFilters .filterOptionWrapperOuter {
     width: 100%;
+    display: inline-block;
 }
 
 #sidemenuFilters .filterOptionWrapper {
