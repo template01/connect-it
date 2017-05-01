@@ -103,6 +103,7 @@ function addD3themes() {
         appendImage(selected, dataTheme, dataTheme2, dataTheme3, 9)
         appendImage(selected, dataTheme, dataTheme2, dataTheme3, 10)
         appendImage(selected, dataTheme, dataTheme2, dataTheme3, 11)
+        appendImage(selected, dataTheme, dataTheme2, dataTheme3, 12)
 
     })
 }
